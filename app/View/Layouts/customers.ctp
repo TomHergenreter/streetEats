@@ -43,10 +43,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<ul>
 				<li><?php echo $this->Html->link('Logout', '/users/logout'); ?></li>
 				<li><?php echo $this->Html->link('Edit', 'edit'); ?></li>
-				<li><?php echo $this->Html->link('Location', 'location'); ?></li>
-				<li><?php echo $this->Html->link('Menu', 'menu'); ?></li>
+				<li><?php echo $this->Html->link('Find', 'find'); ?></li>
+				<li><?php echo $this->Html->link('Favorites', 'favorites'); ?></li>
 				<li><?php echo $this->Html->link('Reviews', 'review'); ?></li>
-				<li><?php echo $this->Html->link('Deals', 'deals'); ?></li>
 			</ul>
 		</div>
 		<div id="content">
@@ -60,3 +59,4 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	</div>
 </body>
 </html>
+<?php echo ($this->element('sql_dump')); ?>

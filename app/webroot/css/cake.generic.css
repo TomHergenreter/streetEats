@@ -86,11 +86,16 @@ p {
 	color: #fff;
 	padding: 0px 30px;
 }
-#header h1 a {
+#header h1 a, #header a {
 	color: #fff;
 	background: #003d4c;
 	font-weight: normal;
 	text-decoration: none;
+}
+#header ul li {
+	float: left;
+	list-style-type: none;
+	padding: 20px 0px 20px 0px;
 }
 #header h1 a:hover {
 	color: #fff;

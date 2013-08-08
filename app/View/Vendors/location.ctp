@@ -5,6 +5,7 @@
         <?php echo $this->Form->input('to');
         echo $this->Form->input('streetAddress');
         echo $this->Form->input('zip');
+        echo $this->Form->hidden( 'date', array( 'value' => date('Y-m-d')));
         echo $this->Form->hidden( 'vendorId', array( 'value' => $data['Vendor']['vendorId']));
         echo $this->Form->hidden( 'locationType', array( 'value' => 1));
     ?>
@@ -25,4 +26,14 @@
     ?>
     </fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
+</div>
+
+<div class="users">
+	<h2>Recent Locations</h2>
+	<?php
+	foreach($locations as $location ): 
+	    		echo '<p>' . $location['Location']['streetAddress'] . '</p>';
+	    		echo '<p>' . $location['Location']['zip'] . '</p>';
+	endforeach;
+	?>  
 </div>

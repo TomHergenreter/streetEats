@@ -7,7 +7,6 @@
         echo $this->Form->input('zip', array('value' => $data['Vendor']['zip']));
         echo $this->Form->input('imageName', array('value' => $data['Vendor']['imageName']));
         echo $this->Form->input('vendorId', array('value' => $data['Vendor']['vendorId']));
-        echo $this->Form->input('vendorId', array('value' => $data['Vendor']['vendorId']));
     ?>
     </fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
