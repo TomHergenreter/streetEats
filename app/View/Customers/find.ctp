@@ -63,7 +63,8 @@ if (count($results) < 1){
 	foreach ($results as $result){
 		echo '<h2>' . $result[0]['Vendor']['businessName'] . '</h2>';
 		echo '<p>' . $result[0]['Vendor']['foodType'] . '</p>';
-		echo $this->Html->link('Menu', '/customers/menus/' . $result[0]['Vendor']['vendorId']);
+		echo $this->Html->link('Menu -', '/customers/menus/' . $result[0]['Vendor']['vendorId']);
+		echo $this->Html->link(' Add to Favorites', '/customers/addFavorites/' . $result[0]['Vendor']['vendorId']);
 	}
 }
 }

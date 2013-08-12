@@ -117,8 +117,17 @@ class CustomersController extends AppController {
 			$favorites[] = $this->Vendor->find('first', array('conditions' => array('Vendor.vendorId' => $vendor)));
 		}
 		$this->set('favorites', $favorites);
-		
-		
+	}
+	
+	public function addFavorites($vendorId = null){
+		$customerId = $this->Customer->find('first', array('fields' => 'customerId', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
+		$data = array('Favorite' => array('customerId' => $customerId['Customer']['customerId'], 'vendorId' => $vendorId));
+		if($this->Favorite->save($data)){
+			$this->redirect('/customers/favorites/');
+		}else{
+			$this->Session->setFlash(__('Request Could Not Be Completed'));
+			$this->redirect(array('controller' => 'customers', 'action' => 'success'));
+		}
 	}
 	
 	public function success() {
