@@ -40,14 +40,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <body>
 	<div id="container">
 		<div id="header">
-			<ul>
-				<li><?php echo $this->Html->link('Logout', '/users/logout'); ?></li>
-				<li><?php echo $this->Html->link('Edit', 'edit'); ?></li>
-				<li><?php echo $this->Html->link('Location', 'location'); ?></li>
-				<li><?php echo $this->Html->link('Menu', 'menu'); ?></li>
-				<li><?php echo $this->Html->link('Reviews', 'review'); ?></li>
-				<li><?php echo $this->Html->link('Deals', 'deals'); ?></li>
-			</ul>
 		</div>
 		<div id="content">
 		

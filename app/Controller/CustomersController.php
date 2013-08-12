@@ -130,6 +130,15 @@ class CustomersController extends AppController {
 		}
 	}
 	
+	public function removeFavorites($vendorId = null){
+		$customerId = $this->Customer->find('first', array('fields' => 'customerId', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
+		
+		if($this->Favorite->deleteAll(array('Favorite.vendorId' => $vendorId, 'Favorite.customerId' => $customerId['Customer']['customerId']))){
+			$this->Session->setFlash(__('The Vendor Has Been Removed'));
+			$this->redirect(array('controller' => 'customers', 'action' => 'favorites'));
+		}
+	}
+	
 	public function success() {
 		
 	}
