@@ -1,4 +1,5 @@
 <?php $this->Html->script('http://maps.google.com/maps/api/js?key=AIzaSyA9Ey6xqdSNYFmWoZyuWbLnruau5VAFN3k&sensor=true', false); ?>
+<div class='users form'>
 <?php 
 $mapOptions = array('zoom' => 11, 'type' => 'ROADMAP', 'width' => '600px', 'height' => '400px','markerIcon' => 'marker.png' , 'custom' => 'styles : [
     {
@@ -67,3 +68,4 @@ if (count($results) < 1){
 }
 }
 ?>
+</div>

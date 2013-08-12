@@ -4,7 +4,7 @@ App::uses('Sanitize', 'Utility');
 
 class CustomersController extends AppController {
 	
-	var $uses = array('Vendor', 'Location', 'Menu', 'Review', 'Customer', 'Deal');
+	var $uses = array('Vendor', 'Location', 'Menu', 'Review', 'Customer', 'Deal', 'Favorite');
 	var $layout = 'customers'; 
 	
 	//Add new customer
@@ -104,6 +104,21 @@ class CustomersController extends AppController {
 		$vendor = $this->Vendor->find('first', array('fields' => 'businessName', 'conditions' => array('Vendor.vendorId' => $id)));
 		$this->set('menuItems', $menuItems);
 		$this->set('vendor', $vendor['Vendor']['businessName']);
+	}
+	
+	//Read Favorites
+	public function favorites(){
+		$customerId = $this->Customer->find('first', array('fields' => 'customerId', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
+		$favoriteIds = $this->Favorite->find('all', array('conditions' => array('Favorite.customerId' => $customerId['Customer']['customerId'])));
+		
+		$favorites = array();
+		foreach ($favoriteIds as $favorite){
+			$vendor = $favorite['Favorite']['vendorId'];
+			$favorites[] = $this->Vendor->find('first', array('conditions' => array('Vendor.vendorId' => $vendor)));
+		}
+		$this->set('favorites', $favorites);
+		
+		
 	}
 	
 	public function success() {
