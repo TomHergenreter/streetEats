@@ -100,13 +100,12 @@ class VendorsController extends AppController {
 	    if (!$this->request->is('post')) {
             throw new MethodNotAllowedException();
         }
-        echo('wtf');
         $this->Menu->id = $id;  
         if ($this->Menu->delete()) {
             $this->Session->setFlash(__('Menu Item Deleted'));
             $this->render('success');
         }else{
-        	$this->Session->setFlash(__('User was not deleted'));
+        	$this->Session->setFlash(__('Menu Item Was Not Deleted, Please Try Again Later'));
 			$this->redirect(array('action' => 'index'));
 		}	
 	    

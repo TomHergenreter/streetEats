@@ -62,6 +62,7 @@ class CustomersController extends AppController {
 		
 		$this->set('matches', $trucks);
 		
+		//Search Function
 		if ($this->request->is('post')){
 			$this->request->data = Sanitize::clean($this->request->data, array('encode' => true, 'remove_html' => true));
 			$data = $this->request->data;
@@ -78,7 +79,7 @@ class CustomersController extends AppController {
 				$results[] = $query;
 			}
 			
-			//remove duplicate results
+			//Remove duplicate results
 			$ids = array();
 			foreach($results as $resultArray){
 				foreach($resultArray as $result){
@@ -86,7 +87,7 @@ class CustomersController extends AppController {
 				}
 			}
 			
-			//set view variable
+			//Set view variable
 			$finalResults = array();
 			$uniqueIds = array_unique($ids);
 			foreach($uniqueIds as $id){
@@ -119,6 +120,7 @@ class CustomersController extends AppController {
 		$this->set('favorites', $favorites);
 	}
 	
+	//Add Favorites
 	public function addFavorites($vendorId = null){
 		$customerId = $this->Customer->find('first', array('fields' => 'customerId', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
 		$data = array('Favorite' => array('customerId' => $customerId['Customer']['customerId'], 'vendorId' => $vendorId));
@@ -130,13 +132,45 @@ class CustomersController extends AppController {
 		}
 	}
 	
+	//Delete Favorites
 	public function removeFavorites($vendorId = null){
 		$customerId = $this->Customer->find('first', array('fields' => 'customerId', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
 		
 		if($this->Favorite->deleteAll(array('Favorite.vendorId' => $vendorId, 'Favorite.customerId' => $customerId['Customer']['customerId']))){
 			$this->Session->setFlash(__('The Vendor Has Been Removed'));
 			$this->redirect(array('controller' => 'customers', 'action' => 'favorites'));
+		}else{
+			$this->Session->setFlash(__('Request Could Not Be Completed, Please Try Again Later'));
 		}
+	}
+	
+	//Write Review
+	public function addReview($vendorId = null){
+		$customerId = $this->Customer->find('first', array('fields' => 'customerId', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
+		$this->set('customerId', $customerId);
+		$this->set('vendorId', $vendorId);
+		if($this->request->is('post')){
+			$this->Review->create();
+			if($this->Review->save($this->request->data)){
+				$this->Session->setFlash(__('Your Review Has Been Added'));
+				$this->redirect(array('controller' => 'customers', 'action' => 'reviews'));	
+			}
+			debug($this->request->data());
+		}
+	}
+	
+	//View Reviews
+	public function reviews(){
+		$customerId = $this->Customer->find('first', array('fields' => 'customerId', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
+		$reviews = $this->Review->find('all', array('conditions' => array('Review.customerId' => $customerId['Customer']['customerId'])));
+				
+		$data = array();
+		foreach ($reviews as $review){
+			$vendorName = $this->Vendor->find('first', array('fields' => 'businessName', 'conditions' => array('Vendor.vendorId' => $review['Review'])));
+			$review['Review']['businessName'] = $vendorName['Vendor']['businessName'];	
+			$data[] = $review;
+		}
+		$this->set('data', $data);		
 	}
 	
 	public function success() {
