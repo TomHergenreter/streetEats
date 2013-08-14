@@ -1,0 +1,10 @@
+
+//Global Modules and Variables
+@import "global/colors";
+@import "global/typography";
+@import "global/mediaQuery";
+
+* {
+	@include box-sizing(border-box);
+}
+

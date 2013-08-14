@@ -1,0 +1,37 @@
+/*    ___          ___          ___          ___          ___          ___     
+     /\__\        /\  \        /\  \        /\  \        /\  \        /\  \    
+    /:/  /       /::\  \      /::\  \      /::\  \      /::\  \      /::\  \   
+   /:/__/       /:/\:\  \    /:/\:\  \    /:/\:\  \    /:/\:\  \    /:/\:\  \  
+  /::\  \ ___  /::\~\:\  \  /::\~\:\  \  /:/  \:\__\  /::\~\:\  \  /::\~\:\  \ 
+ /:/\:\  /\__\/:/\:\ \:\__\/:/\:\ \:\__\/:/__/ \:|__|/:/\:\ \:\__\/:/\:\ \:\__\
+ \/__\:\/:/  /\:\~\:\ \/__/\/__\:\/:/  /\:\  \ /:/  /\:\~\:\ \/__/\/_|::\/:/  /
+      \::/  /  \:\ \:\__\       \::/  /  \:\  /:/  /  \:\ \:\__\     |:|::/  / 
+      /:/  /    \:\ \/__/       /:/  /    \:\/:/  /    \:\ \/__/     |:|\/__/  
+     /:/  /      \:\__\        /:/  /      \::/__/      \:\__\       |:|  |    
+     \/__/        \/__/        \/__/        ~~           \/__/        \|__|    */
+
+// defult header style
+header {
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	background: $orange;
+}
+	
+// selectable logo text
+.logoTitle {
+	float: left;
+	font-family: $headerFontFamily;
+	font-size: 4em;
+	color: $white;
+	padding: 0 0 0 0;
+	@include breakpoint(s) { 
+		display: block;
+		float: none;
+		margin: 0 auto; 
+		text-align: center;
+		padding: .25em 0;
+	}
+}

@@ -1,0 +1,48 @@
+//default form styles
+
+.formContainer{
+	width: 50%;
+	float: left;
+}
+ 
+form {
+	width: 100%;
+	margin: 1em auto;
+	padding-left: 1em; 
+	overflow: none;
+	border-left: 2px solid $orange;
+}
+
+legend {
+	width: 100%;
+	font-family: $baseFontFamily;
+	font-weight: $light;
+	font-size: 1.5em;
+	color: $darkGray;
+	padding: 0 .5em .5em 0;
+	margin-bottom: .25em;
+}
+
+label {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	color: $darkGray;
+}
+
+input, textarea {
+	font-family: $baseFontFamily;
+	background: $lightGray;
+	font-weight: $light;
+	display: block;
+	font-size: 1.2em;
+	outline: 0;
+	border: 0;
+	width: 100%;
+	padding: .5em;
+	margin: .5em 0 .5em 0;
+	border-radius: 5px;
+}
+
+
+

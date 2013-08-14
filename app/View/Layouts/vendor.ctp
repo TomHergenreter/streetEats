@@ -17,20 +17,19 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
+		<?php echo 'Street Eats' ?>:
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('normalize');
+		echo $this->Html->css('screen');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -39,24 +38,28 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 </head>
 <body>
 	<div id="container">
-		<div id="header">
-			<ul>
-				<li><?php echo $this->Html->link('Logout', '/users/logout'); ?></li>
-				<li><?php echo $this->Html->link('Edit', 'edit'); ?></li>
-				<li><?php echo $this->Html->link('Location', 'location'); ?></li>
-				<li><?php echo $this->Html->link('Menu', 'menu'); ?></li>
-				<li><?php echo $this->Html->link('Reviews', 'review'); ?></li>
-				<li><?php echo $this->Html->link('Deals', 'deals'); ?></li>
-			</ul>
-		</div>
-		<div id="content">
+		<header>
+			<h1 class='logoTitle'>StreetEats</h1>
+		</header>
+			<nav class='dashNav'>
+				<ul>
+					<li><?php echo $this->Html->link('Logout', '/users/logout'); ?></li>
+					<li><?php echo $this->Html->link('Edit', 'edit'); ?></li>
+					<li><?php echo $this->Html->link('Location', 'location'); ?></li>
+					<li><?php echo $this->Html->link('Menu', 'menu'); ?></li>
+					<li><?php echo $this->Html->link('Reviews', 'review'); ?></li>
+					<li><?php echo $this->Html->link('Deals', 'deals'); ?></li>
+				</ul>
+			</nav>
+		
+		<div class="content">
 		
 			<?php echo $this->Session->flash(); ?>
 		
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-		</div>
+		<footer>
+		</footer>
 	</div>
 </body>
 </html>

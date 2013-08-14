@@ -1,0 +1,16 @@
+
+//links
+
+a, a:visited, a:hover, a:active {
+	color: $lead;
+	font-family: $baseFontFamily;
+	text-decoration: none;
+	&:hover{
+		color: $orange;
+	}
+}
+
+p > a, a:visited, a:hover, a:active {
+	color: $orange;
+}
+

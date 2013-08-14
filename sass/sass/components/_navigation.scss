@@ -1,0 +1,99 @@
+/*    ___          ___         ___                     ___          ___       ___                     ___          ___     
+     /\__\        /\  \       /\__\         ___       /\  \        /\  \     /\  \         ___       /\  \        /\__\    
+    /::|  |      /::\  \     /:/  /        /\  \     /::\  \      /::\  \    \:\  \       /\  \     /::\  \      /::|  |   
+   /:|:|  |     /:/\:\  \   /:/  /         \:\  \   /:/\:\  \    /:/\:\  \    \:\  \      \:\  \   /:/\:\  \    /:|:|  |   
+  /:/|:|  |__  /::\~\:\  \ /:/__/  ___     /::\__\ /:/  \:\  \  /::\~\:\  \   /::\  \     /::\__\ /:/  \:\  \  /:/|:|  |__ 
+ /:/ |:| /\__\/:/\:\ \:\__\|:|  | /\__\ __/:/\/__//:/__/_\:\__\/:/\:\ \:\__\ /:/\:\__\ __/:/\/__//:/__/ \:\__\/:/ |:| /\__\
+ \/__|:|/:/  /\/__\:\/:/  /|:|  |/:/  //\/:/  /   \:\  /\ \/__/\/__\:\/:/  //:/  \/__//\/:/  /   \:\  \ /:/  /\/__|:|/:/  /
+     |:/:/  /      \::/  / |:|__/:/  / \::/__/     \:\ \:\__\       \::/  //:/  /     \::/__/     \:\  /:/  /     |:/:/  / 
+     |::/  /       /:/  /   \::::/__/   \:\__\      \:\/:/  /       /:/  / \/__/       \:\__\      \:\/:/  /      |::/  /  
+     /:/  /       /:/  /     ~~~~        \/__/       \::/  /       /:/  /               \/__/       \::/  /       /:/  /   
+     \/__/        \/__/                               \/__/        \/__/                             \/__/        \/__/   */
+      
+
+// navigation for landing page
+.landingNav {
+	background: #ffffff;
+	width: 100%;
+	padding: 1em;
+	position: relative;
+	overflow: hidden;
+	
+	// logo placement and size
+	.logo {
+		float: left;
+		max-width: 100%;
+		width: 5em;
+		@include breakpoint(m){
+			display: none;
+		}
+	}
+	
+	// selectable logo text
+	.logoTitle {
+		float: left;
+		font-family: $headerFontFamily;
+		font-size: 3.5em;
+		color: $orange;
+		@include breakpoint(s){
+			float: none;
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			text-align: center;
+		}
+	}
+	
+	// navigation items
+	.navList {
+		float: right;
+		font-size: 1.2em;
+		padding: 0em 0em 0em 0em;
+		> li {
+			float: left;
+			padding: 1.65em 3em 0em 0em;
+			font-weight: $light;
+			&:last-child{
+				padding-right: 0em;
+			}
+			@include breakpoint(s){
+				width: 22%;
+				margin: 0 1.5%;
+				text-align: center;
+				padding: none;
+			}
+		}
+		@include breakpoint(s){
+			float: none;
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+
+// user portal navigation
+.userPortal {
+	float: right;
+	background: $orange;
+	border-radius: 0px 0px 5px 5px; 
+	> li {
+		float: left;
+		padding: .5em 1em;
+		font-weight: $light;
+		a {
+			color: #fff;
+		}
+	}
+}
+
+// dashboard Nav
+.dashNav {
+	float: left;
+	background: $lightGray;
+	position: absolute;
+	top: 63px;
+	bottom: 0px;
+	width: 19%;
+}
