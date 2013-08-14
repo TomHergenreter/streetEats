@@ -45,7 +45,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 				<li><?php echo $this->Html->link('Edit', 'edit'); ?></li>
 				<li><?php echo $this->Html->link('Find', 'find'); ?></li>
 				<li><?php echo $this->Html->link('Favorites', 'favorites'); ?></li>
-				<li><?php echo $this->Html->link('Reviews', 'review'); ?></li>
+				<li><?php echo $this->Html->link('Reviews', 'reviews'); ?></li>
 			</ul>
 		</div>
 		<div id="content">

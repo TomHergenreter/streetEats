@@ -173,6 +173,23 @@ class CustomersController extends AppController {
 		$this->set('data', $data);		
 	}
 	
+	//Delete Reviews
+	public function deleteReview($id = null){
+	
+		if (!$this->request->is('post')) {
+            throw new MethodNotAllowedException();
+        }
+ 
+        $this->Review->id = $id;  
+        if ($this->Review->delete()) {
+            $this->Session->setFlash(__('Review Deleted'));
+            $this->redirect(array('controller' => 'customers', 'action' => 'reviews'));
+        }else{
+        	$this->Session->setFlash(__('Review Was Not Deleted, Please Try Again Later'));
+			$this->redirect(array('action' => 'reviews'));
+		}
+	}
+	
 	public function success() {
 		
 	}

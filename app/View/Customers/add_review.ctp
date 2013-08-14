@@ -10,5 +10,4 @@
 		?>
     </fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
-<?php echo $this->Form->postLink('Delete', '/users/delete'); ?>
 </div>
