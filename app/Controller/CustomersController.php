@@ -5,7 +5,17 @@ App::uses('Sanitize', 'Utility');
 class CustomersController extends AppController {
 	
 	var $uses = array('Vendor', 'Location', 'Menu', 'Review', 'Customer', 'Deal', 'Favorite');
-	var $layout = 'customers'; 
+	var $layout = 'customers';
+	
+	//Set Variables for Layout
+	function beforeFilter() {
+		$img = $this->Customer->find('first', array('fields' => 'email', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
+		$hash = md5(strtolower(trim($img['Customer']['email'])));
+		$this->set('avatar', 'http://www.gravatar.com/avatar/HASH' . $hash . '?s=100');
+		
+		$name = $this->Auth->user('username');
+		$this->set('name', $name);
+	} 
 	
 	//Add new customer
 	public function add() {
@@ -43,8 +53,7 @@ class CustomersController extends AppController {
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Customer->save($this->request->data)) {
                 $this->Session->setFlash(__('Your information has been updated'));
-                $this->render('/customers/success');
-                //$this->redirect(array('action' => 'success'));
+                $this->redirect(array('action' => 'edit'));
             } else {
                 $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
             }

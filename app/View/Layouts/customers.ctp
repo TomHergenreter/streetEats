@@ -24,13 +24,14 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
+		<?php echo 'Street Eats' ?>:
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('normalize');
+		echo $this->Html->css('font-awesome/css/font-awesome.min.css');
+		echo $this->Html->css('screen');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -39,24 +40,29 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 </head>
 <body>
 	<div id="container">
-		<div id="header">
-			<ul>
-				<li><?php echo $this->Html->link('Logout', '/users/logout'); ?></li>
-				<li><?php echo $this->Html->link('Edit', 'edit'); ?></li>
-				<li><?php echo $this->Html->link('Find', 'find'); ?></li>
-				<li><?php echo $this->Html->link('Favorites', 'favorites'); ?></li>
-				<li><?php echo $this->Html->link('Reviews', 'reviews'); ?></li>
-			</ul>
-		</div>
-		<div id="content">
+		<header>
+			<h1 class='logoTitle'>StreetEats</h1>
+		</header>
+			<nav class='dashNav'>
+				<?php echo $this->Html->image($avatar, array('alt' => 'avatar', 'class' => 'avatar')); ?>
+				<h3><?php echo $name ?></h3>
+				<ul>
+					<li class='active'><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-map-marker icon-2x')), 'find', array('escape' => false)); ?></li>
+					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-heart icon-2x')), 'favorites', array('escape' => false)); ?></li>
+					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-comment icon-2x')), 'reviews', array('escape' => false)); ?></li>
+					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-cog icon-2x')), 'edit', array('escape' => false)); ?></li>
+					<li><?php echo $this->Html->link('Logout', '/users/logout'); ?></li>
+				</ul>
+			</nav>
+		
+		<div class="content">
 		
 			<?php echo $this->Session->flash(); ?>
 		
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-		</div>
+		<footer>
+		</footer>
 	</div>
 </body>
 </html>
-<?php echo ($this->element('sql_dump')); ?>

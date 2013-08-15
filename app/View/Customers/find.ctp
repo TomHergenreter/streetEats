@@ -1,7 +1,7 @@
 <?php $this->Html->script('http://maps.google.com/maps/api/js?key=AIzaSyA9Ey6xqdSNYFmWoZyuWbLnruau5VAFN3k&sensor=true', false); ?>
-<div class='users form'>
+<div class='mapSection'>
 <?php 
-$mapOptions = array('zoom' => 11, 'type' => 'ROADMAP', 'width' => '600px', 'height' => '400px','markerIcon' => 'marker.png' , 'custom' => 'styles : [
+$mapOptions = array('zoom' => 14, 'type' => 'ROADMAP', 'width' => '1200px', 'height' => '400px', 'style' => 'max-width: 100%;', 'markerIcon' => 'marker.png' , 'custom' => 'mapTypeControl:false, panControl:false, zoomControl:false, styles : [
     {
       elementType: "geometry.stroke",
       stylers: [
@@ -33,41 +33,49 @@ $mapOptions = array('zoom' => 11, 'type' => 'ROADMAP', 'width' => '600px', 'heig
 	},{
     }
   ]');
-$marker_options = array(
+echo '<h2>Nearby Trucks</h3>';    
+echo $this->GoogleMap->map($mapOptions);
+foreach($matches as $match){
+	$marker_options = array(
     'showWindow' => true,
     'windowText' => 'Marker',
     'markerTitle' => 'Title',
     'markerIcon' => 'truck.png',
   );
-echo '<h2>Nearby Trucks</h2>';  
-echo $this->GoogleMap->map($mapOptions);
-foreach($matches as $match){
 	echo $this->GoogleMap->addMarker('map_canvas', '1', $match['Location']['streetAddress'] . '' . $match['Location']['zip'], $marker_options);
 };
  
 ?>
+</div>
 
+<div class='formContainer'>
 <?php echo $this->Form->create('Vendor'); ?>
     <fieldset>
         <legend><?php echo __('Find Trucks'); ?></legend>
         <?php 
-        echo $this->Form->input('search');
+        echo '<p>' . $this->Form->input('search', array('div' => false)) . '</p>';
+        echo '<p>' . $this->Form->button('Submit', array('class' => 'orangeButton large', 'title' => 'Search')) . '</p>';
+		echo $this->Form->end();
         ?>
     </fieldset>
-<?php echo $this->Form->end(__('Search')); ?>
+</div>
+<div class="mainContentSection">
+<h2>Results</h2>    
 <?php
 if($results != ' '){
-if (count($results) < 1){
-	echo '<h2>No Results</h2>';
-}else{ 
-	foreach ($results as $result){
-		echo '<h2>' . $result[0]['Vendor']['businessName'] . '</h2>';
-		echo '<p>' . $result[0]['Vendor']['foodType'] . '</p>';
-		echo $this->Html->link('Menu -', '/customers/menus/' . $result[0]['Vendor']['vendorId']);
-		echo $this->Html->link(' Add to Favorites -', '/customers/addFavorites/' . $result[0]['Vendor']['vendorId']);
-		echo $this->Html->link(' Write Review', '/customers/addReview/' . $result[0]['Vendor']['vendorId']);
+	if (count($results) < 1){
+		echo '<h3>No Results</h3>';
+	}else{ 
+		foreach ($results as $result){
+			echo '<div class="subSection">';
+			echo '<h3>' . $result[0]['Vendor']['businessName'] . '</h3>';
+			echo '<p>' . $result[0]['Vendor']['foodType'] . '</p>';
+			echo '<p>' . $this->Html->link('Menu -', '/customers/menus/' . $result[0]['Vendor']['vendorId']);
+			echo $this->Html->link(' Add to Favorites -', '/customers/addFavorites/' . $result[0]['Vendor']['vendorId']);
+			echo $this->Html->link(' Write Review', '/customers/addReview/' . $result[0]['Vendor']['vendorId']) . '</p>';
+			echo '</div>';
+		}
 	}
-}
 }
 ?>
 </div>

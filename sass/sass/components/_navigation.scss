@@ -112,6 +112,9 @@
 	}
 	.active {
 		background: #fff;
+		i{
+			color: $orange;
+		}
 	}
 	.avatar {
 		max-width: 100%;

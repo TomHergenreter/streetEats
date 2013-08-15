@@ -13,9 +13,9 @@ class UsersController extends AppController {
 	        if ($this->Auth->login()) {
 	        	$this->request->data = $this->Auth->user();
 	        	if ($this->request->data['userType'] == '1'){
-	            	$this->redirect(array('controller' => 'customers', 'action' => 'success'));
+	            	$this->redirect(array('controller' => 'customers', 'action' => 'find'));
             	}else if ($this->request->data['userType'] == '2'){
-	            	$this->redirect(array('controller' => 'vendors', 'action' => 'success'));
+	            	$this->redirect(array('controller' => 'vendors', 'action' => 'location'));
             	}
 	        }else{
 	            $this->Session->setFlash(__('Invalid username or password, try again'));
