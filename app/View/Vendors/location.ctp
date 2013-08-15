@@ -1,3 +1,4 @@
+<!-- Current Location Form-->
 <div class="formContainer">
 <?php echo $this->Form->create('Location'); ?>
     <fieldset>
@@ -15,6 +16,7 @@
     </fieldset>
 </div>
 
+<!--Recent Locations-->
 <div class="secondaryContentSection">
 	<h2>Recent Locations</h2>
 	<?php
@@ -29,6 +31,7 @@
 	?>  
 </div>
 
+<!--Future Locations Form-->
 <div class="formContainer">
 <?php echo $this->Form->create('Location'); ?>
     <fieldset>

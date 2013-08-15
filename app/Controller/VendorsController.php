@@ -67,17 +67,35 @@ class VendorsController extends AppController {
 	    $vendorId = $this->Vendor->find('first', array('fields' => 'vendorId', 'conditions' => array('Vendor.userId' => $userId)));
 		$this->set('data', $vendorId);
 		
-		$locations = $this->Location->find('all', array('fields' => 'streetAddress, zip', 'limit' => 7, 'conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'])));
+		$locations = $this->Location->find('all', array('fields' => 'streetAddress, zip, date, to', 'conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'])));
 		$this->set('locations', $locations);
 		
 		if ($this->request->is('post')) {
-					
-            $this->Location->create();
-            if ($this->Location->save($this->request->data)) {
-            	$this->Session->setFlash(__('Your Location Has Been Updated!'));
-            	$this->redirect(array('action' => 'location'));
-            } else {
-	            $this->Session->setFlash(__('Your Location Could Not Be Updated, Please Try Again Later'));
+			
+			//Prevent Duplicates
+			$flag = false;
+			foreach($locations as $location){
+				if($this->request->data['Location']['date'] == $location['Location']['date'] && $this->request->data['Location']['to'] . ':00' == $location['Location']['to']){
+					$this->Session->setFlash(__('You Have Already Entered A Location For This Time'));
+					$flag = true;	
+				}
+			}
+			
+			if($flag == false){
+				if ($this->request->data['Location']['locationType'] == 1) {
+	            	$oldLocations = $this->Location->find('all', array('conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'])));
+	            	foreach($oldLocations as $location){
+	            		$this->Location->id = $location['Location']['locationId'];
+		            	$this->Location->saveField('locationType', 3);
+	            	}
+            	}		
+	            $this->Location->create();
+	            if ($this->Location->save($this->request->data)) {
+	            	$this->Session->setFlash(__('Your Location Has Been Updated!'));
+	            	$this->redirect(array('action' => 'location'));
+	            } else {
+		            $this->Session->setFlash(__('Your Location Could Not Be Updated, Please Try Again Later'));
+	            }
             }
         }	    
     }

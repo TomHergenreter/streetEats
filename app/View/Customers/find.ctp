@@ -1,51 +1,53 @@
 <?php $this->Html->script('http://maps.google.com/maps/api/js?key=AIzaSyA9Ey6xqdSNYFmWoZyuWbLnruau5VAFN3k&sensor=true', false); ?>
 <div class='mapSection'>
-<?php 
-$mapOptions = array('zoom' => 14, 'type' => 'ROADMAP', 'width' => '1200px', 'height' => '400px', 'style' => 'max-width: 100%;', 'markerIcon' => 'marker.png' , 'custom' => 'mapTypeControl:false, panControl:false, zoomControl:false, styles : [
-    {
-      elementType: "geometry.stroke",
-      stylers: [
-        { visibility: "off" }
-      ]
-    },{
-      featureType: "poi.park",
-      elementType: "labels",
-      stylers: [
-        { visibility: "simplified" }
-      ]
-	},{
-      elementType: "geometry.fill",
-      stylers: [
-        { hue: "#ff6e00" }
-      ]
-    },{
-      elementType: "labels.text.stroke",
-      stylers: [
-        { visibility: "off" }
-      ]
-    },{
-      featureType: "poi.park",
-      elementType: "labels.icon",
-      stylers: [
-        { saturation: 100 },
-        { hue: "#ff8800" }
-      ]
-	},{
-    }
-  ]');
-echo '<h2>Nearby Trucks</h3>';    
-echo $this->GoogleMap->map($mapOptions);
-foreach($matches as $match){
-	$marker_options = array(
-    'showWindow' => true,
-    'windowText' => 'Marker',
-    'markerTitle' => 'Title',
-    'markerIcon' => 'truck.png',
-  );
+	<?php 
+	$mapOptions = array('zoom' => 14, 'type' => 'ROADMAP', 'width' => '1200px', 'height' => '400px', 'style' => 'max-width: 100%;', 'markerIcon' => 'marker.png' , 'custom' => 'mapTypeControl:false, panControl:false, zoomControl:false, styles : [
+	    {
+	      elementType: "geometry.stroke",
+	      stylers: [
+	        { visibility: "off" }
+	      ]
+	    },{
+	      featureType: "poi.park",
+	      elementType: "labels",
+	      stylers: [
+	        { visibility: "simplified" }
+	      ]
+		},{
+	      elementType: "geometry.fill",
+	      stylers: [
+	        { hue: "#ff6e00" }
+	      ]
+	    },{
+	      elementType: "labels.text.stroke",
+	      stylers: [
+	        { visibility: "off" }
+	      ]
+	    },{
+	      featureType: "poi.park",
+	      elementType: "labels.icon",
+	      stylers: [
+	        { saturation: 100 },
+	        { hue: "#ff8800" }
+	      ]
+		},{
+	    }
+	  ]');
+	echo '<h2>Nearby Trucks</h3>';    
+	echo $this->GoogleMap->map($mapOptions);
+	foreach($matches as $match){
+		$id = $match['Location']['vendorId'];
+		$name = $match['Location']['businessName'];
+		$marker_options = array(
+		    'showWindow' => true,
+		    'windowText' => $this->html->link($name, 'menus/' . $id),
+		    'markerTitle' => $name,
+		    'markerIcon' => 'truck.png',
+		);
 	echo $this->GoogleMap->addMarker('map_canvas', '1', $match['Location']['streetAddress'] . '' . $match['Location']['zip'], $marker_options);
-};
- 
-?>
+	echo '<h3><i class="icon-map-marker"></i>' . $name . '</h3>';
+	};
+	?>
 </div>
 
 <div class='formContainer'>

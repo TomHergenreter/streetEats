@@ -69,7 +69,13 @@ class CustomersController extends AppController {
 		$this->helpers[] = 'GoogleMap';
 		$trucks = $this->Location->find('all', array('conditions' => array('Location.date' => date('Y-m-d'), 'Location.from' < date('H:i:s'), 'Location.to' > date('H:i:s'))));
 		
-		$this->set('matches', $trucks);
+		$data = array();
+		foreach ($trucks as $truck){
+			$vendorName = $this->Vendor->find('first', array('fields' => 'businessName', 'conditions' => array('Vendor.vendorId' => $truck['Location'])));
+			$truck['Location']['businessName'] = $vendorName['Vendor']['businessName'];
+			$data[] = $truck;
+		};
+		$this->set('matches', $data);
 		
 		//Search Function
 		if ($this->request->is('post')){
