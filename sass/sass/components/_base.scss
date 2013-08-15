@@ -8,3 +8,17 @@
 	@include box-sizing(border-box);
 }
 
+img {
+	display: block;
+}
+
+.message {
+	padding: 1em;
+	margin: 1em auto;
+	font-family: $baseFontFamily;
+	font-weight: 1em;
+	width: 96%;
+	border: 2px solid $blue;
+	color: $blue;
+}
+

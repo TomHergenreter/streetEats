@@ -35,7 +35,7 @@
 
 .large {
 	margin-top: 1em;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	padding: .25em 5em;
 	@include breakpoint(xs){
 		width: 100%;
@@ -63,7 +63,7 @@ button.greenButton {
 	position: relative;
 	float: left;
 	color: #FFF;
-	background: $green;
+	background: $blue;
 	text-decoration: none;
 	font-weight: $light;
 	border-radius: 5px;

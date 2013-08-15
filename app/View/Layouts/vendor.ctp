@@ -29,6 +29,7 @@
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('normalize');
+		echo $this->Html->css('font-awesome/css/font-awesome.min.css');
 		echo $this->Html->css('screen');
 
 		echo $this->fetch('meta');
@@ -42,13 +43,15 @@
 			<h1 class='logoTitle'>StreetEats</h1>
 		</header>
 			<nav class='dashNav'>
+				<?php echo $this->Html->image($avatar, array('alt' => 'avatar', 'class' => 'avatar')); ?>
+				<h3><?php echo $name ?></h3>
 				<ul>
+					<li class='active'><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-map-marker icon-2x')), 'location', array('escape' => false)); ?></li>
+					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-reorder icon-2x')), 'menu', array('escape' => false)); ?></li>
+					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-cog icon-2x')), 'edit', array('escape' => false)); ?></li>
+					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-comment icon-2x')), 'review', array('escape' => false)); ?></li>
+					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-dollar icon-2x')), 'deals', array('escape' => false)); ?></li>
 					<li><?php echo $this->Html->link('Logout', '/users/logout'); ?></li>
-					<li><?php echo $this->Html->link('Edit', 'edit'); ?></li>
-					<li><?php echo $this->Html->link('Location', 'location'); ?></li>
-					<li><?php echo $this->Html->link('Menu', 'menu'); ?></li>
-					<li><?php echo $this->Html->link('Reviews', 'review'); ?></li>
-					<li><?php echo $this->Html->link('Deals', 'deals'); ?></li>
 				</ul>
 			</nav>
 		

@@ -1,8 +1,79 @@
-body{
+/*    ___       ___           ___           ___           ___           ___     
+     /\__\     /\  \         |\__\         /\  \         /\__\         /\  \    
+    /:/  /    /::\  \        |:|  |       /::\  \       /:/  /         \:\  \   
+   /:/  /    /:/\:\  \       |:|  |      /:/\:\  \     /:/  /           \:\  \  
+  /:/  /    /::\~\:\  \      |:|__|__   /:/  \:\  \   /:/  /  ___       /::\  \ 
+ /:/__/    /:/\:\ \:\__\     /::::\__\ /:/__/ \:\__\ /:/__/  /\__\     /:/\:\__\
+ \:\  \    \/__\:\/:/  /    /:/~~/~    \:\  \ /:/  / \:\  \ /:/  /    /:/  \/__/
+  \:\  \        \::/  /    /:/  /       \:\  /:/  /   \:\  /:/  /    /:/  /     
+   \:\  \       /:/  /     \/__/         \:\/:/  /     \:\/:/  /     \/__/      
+    \:\__\     /:/  /                     \::/  /       \::/  /                 
+     \/__/     \/__/                       \/__/         \/__/            */
+     
+body {
 	margin-top: 60px;
 }
 
 .content{
-	width: 80%;
+	width: 85%;
 	float: right;
+}
+
+.mainContentSection {
+	width: 58%;
+	float: left;
+	margin: 1em  0 1em 2%;
+	padding-left: 1em; 
+	overflow: none;
+	border-left: 2px solid $orange;
+	> h2 {
+		margin-bottom: .5em;
+	}
+	> p.clear {
+		margin-bottom: .5em;
+	}
+}
+
+.secondaryContentSection {
+	width: 38%;
+	float: left;
+	margin: 1em  0 1em 2%;
+	padding-left: 1em; 
+	overflow: none;
+	border-left: 2px solid $orange;
+	@include breakpoint(m) { 
+		float: none;
+		border-left: none;
+		border-top: 2px solid $orange;
+		width: 96%;
+		padding-top: 1em;
+		margin: 0 auto;
+	}
+	> h2 {
+		margin-bottom: .5em;
+	}
+}
+
+.formContainer{
+	width: 58%;
+	float: left;
+	margin: 1em 0 1em 2%;
+	border-left: 2px solid $orange;
+	@include breakpoint(m) {
+		float: none; 
+		border-left: none;
+		width: 100%;
+		padding: 1em;
+		margin: 0 auto;
+	}
+}
+
+.clearBottom {
+	margin-bottom: .5em;
+}
+
+.subSection {
+	border-left: 2px solid $gray;
+	margin: 1em 0;
+	padding: .5em;
 }

@@ -1,14 +1,19 @@
-<div class="users form">
+<div class='formContainer'>
 <?php echo $this->Form->create('Vendor'); ?>
     <fieldset>
-        <legend><?php echo __('Edit Vendor'); ?></legend>
-        <?php echo $this->Form->input('businessName', array('value' => $data['Vendor']['businessName']));
-        echo $this->Form->input('email', array('value' => $data['Vendor']['email']));
-        echo $this->Form->input('zip', array('value' => $data['Vendor']['zip']));
-        echo $this->Form->input('imageName', array('value' => $data['Vendor']['imageName']));
-        echo $this->Form->input('vendorId', array('value' => $data['Vendor']['vendorId']));
+        <legend><?php echo __('Update Your Information'); ?></legend>
+        <?php echo '<p>' . $this->Form->input('businessName', array('div' => false, 'value' => $data['Vendor']['businessName'])) . '</p>';
+        echo '<p>' . $this->Form->input('email', array('div' => false, 'value' => $data['Vendor']['email'])) . '</p>';
+        echo '<p>' . $this->Form->input('zip', array('div' => false, 'value' => $data['Vendor']['zip'])) . '</p>';
+        echo '<p>' . $this->Form->input('vendorId', array('div' => false, 'value' => $data['Vendor']['vendorId'])) . '</p>';
+        echo '<p>' . $this->Form->button('Submit', array('class' => 'orangeButton large', 'title' => 'Submit')) . '</p>';
+		echo $this->Form->end();
     ?>
     </fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-<?php echo $this->Form->postLink('Delete', '/users/delete'); ?>
+</div>
+
+<div class='mainContentSection'>
+	<h2>Delete Your Account</h2>
+	<p class='clear'>Don't Click...unless you really want to</p> 
+	<?php echo $this->Form->postLink('Delete', '/users/delete'); ?>
 </div>

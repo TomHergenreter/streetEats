@@ -13,13 +13,13 @@
 	</fieldset>
 </div>
 
-<div class="users form">
+<div class="mainContentSection">
 	<h2>Current Deals</h2>
 	<?php
 	foreach($currentDeals as $deal ): 
-	    		echo '<h3>Deal: ' . $deal['Deal']['dealTitle'] . '</h3>';
+	    		echo '<h3>' . $deal['Deal']['dealTitle'] . '</h3>';
 	    		echo '<p>Description: ' . $deal['Deal']['dealDescription'] . '</p>';
-	    		echo '<p>Expiration: ' . $deal['Deal']['dealExpiration'] . '</p>';
+	    		echo '<p class="clear">Expiration: ' . $deal['Deal']['dealExpiration'] . '</p>';
 	endforeach;
 	?>    	
 </div>

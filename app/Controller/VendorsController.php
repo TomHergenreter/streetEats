@@ -3,6 +3,16 @@ class VendorsController extends AppController {
 	
 	var $uses = array('Vendor', 'Location', 'Menu', 'Review', 'Customer', 'Deal');
 	var $layout = 'vendor';
+	
+	//Set Variables for Layout
+	function beforeFilter() {
+		$img = $this->Vendor->find('first', array('fields' => 'email', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))));
+		$hash = md5(strtolower(trim($img['Vendor']['email'])));
+		$this->set('avatar', 'http://www.gravatar.com/avatar/HASH' . $hash . '?s=100');
+		
+		$name = $this->Vendor->find('first', array('fields' => 'businessName', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))));
+		$this->set('name', $name['Vendor']['businessName']);
+	}	
 	 
 	//Add Vendor Data
 	public function add() {
@@ -40,7 +50,7 @@ class VendorsController extends AppController {
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Vendor->save($this->request->data)) {
                 $this->Session->setFlash(__('Your information has been updated'));
-                $this->render('/vendors/success');
+                $this->redirect(array('action' => 'edit'));
                 //$this->redirect(array('action' => 'success'));
             } else {
                 $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
@@ -57,17 +67,17 @@ class VendorsController extends AppController {
 	    $vendorId = $this->Vendor->find('first', array('fields' => 'vendorId', 'conditions' => array('Vendor.userId' => $userId)));
 		$this->set('data', $vendorId);
 		
-		$locations = $this->Location->find('all', array('fields' => 'streetAddress, zip', 'conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'])));
+		$locations = $this->Location->find('all', array('fields' => 'streetAddress, zip', 'limit' => 7, 'conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'])));
 		$this->set('locations', $locations);
 		
 		if ($this->request->is('post')) {
 					
             $this->Location->create();
             if ($this->Location->save($this->request->data)) {
-            	$this->Session->setFlash(__('Location Saved'));
-            	$this->render('/vendors/success');
+            	$this->Session->setFlash(__('Your Location Has Been Updated!'));
+            	$this->redirect(array('action' => 'location'));
             } else {
-	            echo ('error');
+	            $this->Session->setFlash(__('Your Location Could Not Be Updated, Please Try Again Later'));
             }
         }	    
     }
@@ -87,7 +97,7 @@ class VendorsController extends AppController {
             $this->Menu->create();
             if ($this->Menu->save($this->request->data)) {
             	$this->Session->setFlash(__('Menu Item Saved'));
-            	$this->render('/vendors/success');
+            	$this->redirect(array('action' => 'menu'));
             } else {
 	            echo ('error');
             }
@@ -114,12 +124,16 @@ class VendorsController extends AppController {
     //View Reviews
     public function review(){
 		
-		$userId = $this->Auth->user('userId');
-	    $vendorId = $this->Vendor->find('first', array('fields' => 'vendorId', 'conditions' => array('Vendor.userId' => $userId)));		
+		$vendorId = $this->Vendor->find('first', array('fields' => 'vendorId', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))));
 		$reviews = $this->Review->find('all', array('conditions' => array('Review.vendorId' => $vendorId['Vendor']['vendorId'])));
-		$customer = $this->Customer->find('first', array('fields' => 'firstName', 'conditions' => array('Customer.customerId' => $reviews[0]['Review']['customerId'])));
-		$this->set('data', $reviews);
-		$this->set('customer', $customer);
+				
+		$data = array();
+		foreach ($reviews as $review){
+			$customerName = $this->Customer->find('first', array('fields' => 'firstName', 'conditions' => array('Customer.customerId' => $review['Review'])));
+			$review['Review']['customerName'] = $customerName['Customer']['firstName'];	
+			$data[] = $review;
+		}
+		$this->set('data', $data);
     }
     
     //Create Deals
@@ -149,8 +163,8 @@ class VendorsController extends AppController {
 					
             $this->Deal->create();
             if ($this->Deal->save($this->request->data)) {
-            	$this->Session->setFlash(__('Menu Item Saved'));
-            	$this->render('/vendors/success');
+            	$this->Session->setFlash(__('Your Deals Have Been Updated'));
+            	$this->redirect(array('action' => 'deals'));
             } else {
 	            echo ('error');
             }

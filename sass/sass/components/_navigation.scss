@@ -95,5 +95,32 @@
 	position: absolute;
 	top: 63px;
 	bottom: 0px;
-	width: 19%;
+	width: 15%;
+	> ul li {
+		//border-left: 1em solid $lightGray;
+	}
+	> ul li a {
+		display: block;
+		text-align: center;
+		padding: 1em .5em;
+	}
+	> ul li a i {
+		text-align: center;
+	}
+	> a, a:visited, a:hover, a:active {
+		color: $lead;
+	}
+	.active {
+		background: #fff;
+	}
+	.avatar {
+		max-width: 100%;
+		margin: 1em auto .5em auto;
+	}
+	> h3 {
+		text-align: center;
+		font-weight: $light;
+		color: $blue;
+		margin-bottom: 1em;
+	}
 }
