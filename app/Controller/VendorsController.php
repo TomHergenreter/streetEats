@@ -6,12 +6,13 @@ class VendorsController extends AppController {
 	
 	//Set Variables for Layout
 	function beforeFilter() {
-		$img = $this->Vendor->find('first', array('fields' => 'email', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))));
-		$hash = md5(strtolower(trim($img['Vendor']['email'])));
-		$this->set('avatar', 'http://www.gravatar.com/avatar/HASH' . $hash . '?s=100');
-		
-		$name = $this->Vendor->find('first', array('fields' => 'businessName', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))));
-		$this->set('name', $name['Vendor']['businessName']);
+		if($img = $this->Vendor->find('first', array('fields' => 'email', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))))){
+			$hash = md5(strtolower(trim($img['Vendor']['email'])));
+			$this->set('avatar', 'http://www.gravatar.com/avatar/HASH' . $hash . '?s=100');
+			
+			$name = $this->Vendor->find('first', array('fields' => 'businessName', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))));
+			$this->set('name', $name['Vendor']['businessName']);
+		}
 	}	
 	 
 	//Add Vendor Data
@@ -32,7 +33,7 @@ class VendorsController extends AppController {
 			
             $this->Vendor->create();
             if ($this->Vendor->save($this->request->data)) {
-            	$this->render('/vendors/success');
+            	$this->render('/vendors/location');
             } else {
 	            echo ('error');
             }

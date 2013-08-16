@@ -13,9 +13,9 @@
 </div>
 
 <div class="mainContentSection">
-	<h2>Current Menu Item</h2>
+	<h2>Current Menu Items</h2>
 	<?php
-	if(count($menu) < 1){
+	if(count($menu) >= 1){
 	foreach($menu as $menuItem ){ 
 				echo '<div class="subSection">';
 	    		echo '<h3>' . $menuItem['Menu']['menuItem'] . '</h3>';

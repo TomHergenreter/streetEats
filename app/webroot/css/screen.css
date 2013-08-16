@@ -483,6 +483,16 @@ body {
   overflow: none;
   border-left: 2px solid #e84c3b;
 }
+@media (max-width: 800px) {
+  .mainContentSection {
+    float: none;
+    border-left: none;
+    border-top: 2px solid #e84c3b;
+    width: 96%;
+    padding: 1em;
+    margin: 0 auto;
+  }
+}
 .mainContentSection > h2 {
   margin-bottom: .5em;
 }
@@ -545,6 +555,23 @@ body {
   padding-left: 1em;
   border-left: 2px solid #e84c3b;
 }
+@media (max-width: 800px) {
+  .mapSection {
+    float: none;
+    border-left: none;
+    border-top: 2px solid #e84c3b;
+    width: 100%;
+    padding: 1em;
+    margin: 0 auto;
+  }
+}
 .mapSection > h2 {
   margin-bottom: .5em;
+}
+.mapSection > h3 {
+  margin-top: .5em;
+  color: #e84c3b;
+}
+.mapSection > h3 > i {
+  margin-right: .5em;
 }

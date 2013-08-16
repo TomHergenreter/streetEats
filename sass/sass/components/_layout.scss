@@ -26,6 +26,14 @@ body {
 	padding-left: 1em; 
 	overflow: none;
 	border-left: 2px solid $orange;
+	@include breakpoint(m) {
+		float: none; 
+		border-left: none;
+		border-top: 2px solid $orange;
+		width: 96%;
+		padding: 1em;
+		margin: 0 auto;
+	}
 	> h2 {
 		margin-bottom: .5em;
 	}
@@ -84,7 +92,22 @@ body {
 	margin: 1em  0 1em 2%;
 	padding-left: 1em; 
 	border-left: 2px solid $orange;
+	@include breakpoint(m) {
+		float: none; 
+		border-left: none;
+		border-top: 2px solid $orange;
+		width: 100%;
+		padding: 1em;
+		margin: 0 auto;
+	}
 	> h2 {
 		margin-bottom: .5em;
+	}
+	> h3 {
+		margin-top: .5em;
+		color: $orange;
+		> i {
+			margin-right: .5em;
+		}
 	}
 }

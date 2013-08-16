@@ -9,12 +9,13 @@ class CustomersController extends AppController {
 	
 	//Set Variables for Layout
 	function beforeFilter() {
-		$img = $this->Customer->find('first', array('fields' => 'email', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
-		$hash = md5(strtolower(trim($img['Customer']['email'])));
-		$this->set('avatar', 'http://www.gravatar.com/avatar/HASH' . $hash . '?s=100');
-		
-		$name = $this->Auth->user('username');
-		$this->set('name', $name);
+		if($img = $this->Customer->find('first', array('fields' => 'email', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))))){
+			$hash = md5(strtolower(trim($img['Customer']['email'])));
+			$this->set('avatar', 'http://www.gravatar.com/avatar/HASH' . $hash . '?s=100');
+			
+			$name = $this->Auth->user('username');
+			$this->set('name', $name);
+		}
 	} 
 	
 	//Add new customer
@@ -35,7 +36,7 @@ class CustomersController extends AppController {
 			
             $this->Customer->create();
             if ($this->Customer->save($this->request->data)) {
-            	$this->redirect(array('controller' => 'customers', 'action' => 'success'));
+            	$this->redirect(array('controller' => 'customers', 'action' => 'find'));
             } else {
 	            echo ('error');
             }
@@ -67,7 +68,7 @@ class CustomersController extends AppController {
 		
 		//Map 
 		$this->helpers[] = 'GoogleMap';
-		$trucks = $this->Location->find('all', array('conditions' => array('Location.date' => date('Y-m-d'), 'Location.from' < date('H:i:s'), 'Location.to' > date('H:i:s'))));
+		$trucks = $this->Location->find('all', array('conditions' => array('Location.date' => date('Y-m-d'), 'Location.from' < date('H:i:s'), 'Location.to' > date('H:i:s'), 'Location.locationType' => 1)));
 		
 		$data = array();
 		foreach ($trucks as $truck){
@@ -169,8 +170,9 @@ class CustomersController extends AppController {
 			if($this->Review->save($this->request->data)){
 				$this->Session->setFlash(__('Your Review Has Been Added'));
 				$this->redirect(array('controller' => 'customers', 'action' => 'reviews'));	
+			}else{
+				$this->Session->setFlash(__('Your Review Could Not Be Entered At This Time'));	
 			}
-			debug($this->request->data());
 		}
 	}
 	

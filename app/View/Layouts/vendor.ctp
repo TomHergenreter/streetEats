@@ -43,8 +43,12 @@
 			<h1 class='logoTitle'>StreetEats</h1>
 		</header>
 			<nav class='dashNav'>
-				<?php echo $this->Html->image($avatar, array('alt' => 'avatar', 'class' => 'avatar')); ?>
-				<h3><?php echo $name ?></h3>
+				<?php 
+				if(isset($avatar)){
+					echo $this->Html->image($avatar, array('alt' => 'avatar', 'class' => 'avatar'));
+					echo '<h3>' . $name . '</h3>';
+				} 
+				?>
 				<ul>
 					<li class='active'><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-map-marker icon-2x')), 'location', array('escape' => false)); ?></li>
 					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-reorder icon-2x')), 'menu', array('escape' => false)); ?></li>

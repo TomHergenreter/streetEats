@@ -6,17 +6,18 @@
 		document.getElementById("VendorTimezone").value = timezone;
 	}
 </script>
-<div class="users form">
+
+<div class="formContainer">
 <?php echo $this->Form->create('Vendor'); ?>
     <fieldset>
         <legend><?php echo __('Add Vendor'); ?></legend>
-        <?php echo $this->Form->input('businessName');
-        echo $this->Form->input('email');
-        echo $this->Form->input('zip');
-        echo $this->Form->input('imageName');
+        <?php echo '<p>' . $this->Form->input('businessName', array('div' => false)) . '</p>';
+        echo '<p>' . $this->Form->input('email', array('div' => false)) . '</p>';
+        echo '<p>' . $this->Form->input('zip', array('div' => false)) . '</p>';
         echo $this->Form->hidden( 'userId', array( 'value' => $userId));
         echo $this->Form->hidden( 'timezone');
+        echo '<p>' . $this->Form->button('Submit', array('class' => 'orangeButton large', 'title' => 'Submit')) . '</p>';
+		echo $this->Form->end();
     ?>
     </fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
 </div>
