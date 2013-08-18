@@ -1,0 +1,79 @@
+.background {
+	background: url(../img/streetEatsbg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.intro {
+	height: 600px;
+	h1 {
+		float: right;
+		color: #fff;
+		text-align: center;
+	}
+	.introText {
+		float: left;
+		width: 30%;
+		margin: 10% 0 0 5%;
+		@include breakpoint(s) {
+			float: none;
+			width: 80%;
+			margin: 0 auto;
+			padding: 1.5em 0 1.5em 0;
+		}
+	}
+	@include breakpoint(s) {
+		width: 100%;
+		overflow: hidden;
+		height: auto;
+		padding: 1em 1em 2em 1em;
+	}
+}
+
+.features {
+	background: $orange;
+	h1{
+		color: #fff;
+		margin: 0 auto;
+		text-align: center;
+		padding: .25em;
+	}
+	h3{
+		color: #fff;
+		font-size: 1em;
+		margin: 0 auto;
+		text-align: center;
+		padding: .5em;
+	}
+	.icons-ul {
+		width: 70%;
+		margin:0 auto;
+		padding: 1em 0;
+		li{
+			font-family: $baseFontFamily;
+			font-weight: 100;
+			color: #fff;
+			padding: 1em 0;
+			line-height: 1.2em;
+		}
+		i{
+			font-size: 2.5em;
+			padding-top: .15em;
+			@include breakpoint(s) {
+				font-size: 2em;
+			}
+		}
+	}
+}
+
+.introImg {
+	float: left;
+	margin-left: 25%;
+	padding-top: 5em;
+	max-width: 100%;
+	@include breakpoint(s) {
+		display: none;
+	}
+}

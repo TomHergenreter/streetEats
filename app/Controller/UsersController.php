@@ -1,10 +1,13 @@
 <?php
 
 class UsersController extends AppController {
-
+	
+	var $uses = array('Vendor', 'Location');
+	
     public function beforeFilter() {
 	    parent::beforeFilter();
 	    $this->Auth->allow('add'); // Letting users register themselves
+	    $this->Auth->allow('index'); 
 	}
 
 	public function login() {
@@ -29,7 +32,7 @@ class UsersController extends AppController {
 	}
 
     public function index() {
-        
+       
     }
 
     public function view($id = null) {

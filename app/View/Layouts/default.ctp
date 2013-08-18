@@ -16,21 +16,20 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
+		<?php echo 'Street Eats'?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('normalize');
+		echo $this->Html->css('font-awesome/css/font-awesome.min.css');
+		echo $this->Html->css('screen');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -39,14 +38,36 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 </head>
 <body>
 	<div id="container">
-		<div id="header">
-		</div>
+	
+		<!-- Header -->
+        <header>
+	        <nav class="landingNav">
+	        
+	        	<!-- Logo -->
+	        	<h1 class="logoTitle">Street Eats</h1>
+	        	
+	        	<!-- nav links -->
+	        	<ul class="navList">
+	        		<li><a href="#about">About</a></li>
+	        		<li><a href="">Features</a></li>
+	        		<li><a href="">Contact</a></li>
+	        		<li><a href="">Blog</a></li>
+	        	</ul>
+	        	
+	        </nav>
+        </header>
+        <!-- End Header -->
+        
 		<div id="content">
-		
 			<?php echo $this->Session->flash(); ?>
-		
 			<?php echo $this->fetch('content'); ?>
 		</div>
+		
+		<!-- Map Section -->
+        <div class="background">
+        </div>
+        <!-- End Map Section -->
+        
 		<div id="footer">
 		</div>
 	</div>

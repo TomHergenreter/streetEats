@@ -416,3 +416,92 @@ Stack Trace:
 #3 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-08-18 21:04:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/streetEatsTruck.png?url=img%2FstreetEatsTruck.png
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/repo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-08-18 21:33:42 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/thergenreter1/Desktop/final project/repo/streetEats/app/Controller/UsersController.php, line 33]
+2013-08-18 21:33:42 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/thergenr...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/thergenr...', 33, Array)
+#2 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/thergenr...', 33, Array)
+#3 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-18 21:34:46 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/thergenreter1/Desktop/final project/repo/streetEats/app/Controller/UsersController.php, line 33]
+2013-08-18 21:34:46 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/thergenr...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/thergenr...', 33, Array)
+#2 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/thergenr...', 33, Array)
+#3 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-18 21:34:57 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/thergenreter1/Desktop/final project/repo/streetEats/app/Controller/UsersController.php, line 33]
+2013-08-18 21:34:57 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/thergenr...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/thergenr...', 33, Array)
+#2 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/thergenr...', 33, Array)
+#3 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-18 22:03:30 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/Users/thergenreter1/Desktop/final project/repo/streetEats/app/View/Users/index.ctp, line 6]
+2013-08-18 22:03:30 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/thergenr...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/thergenr...', 6, Array)
+#2 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/thergenr...', 6, Array)
+#3 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-18 22:03:52 Error: Fatal Error (4): syntax error, unexpected ''Mobile View));) ?>' (T_ENCAPSED_AND_WHITESPACE) in [/Users/thergenreter1/Desktop/final project/repo/streetEats/app/View/Users/index.ctp, line 6]
+2013-08-18 22:03:52 Error: [FatalErrorException] syntax error, unexpected ''Mobile View));) ?>' (T_ENCAPSED_AND_WHITESPACE)
+Request URL: /
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/thergenr...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/thergenr...', 6, Array)
+#2 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/thergenr...', 6, Array)
+#3 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-18 22:04:09 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/thergenreter1/Desktop/final project/repo/streetEats/app/View/Users/index.ctp, line 6]
+2013-08-18 22:04:09 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/thergenr...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/thergenr...', 6, Array)
+#2 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/thergenr...', 6, Array)
+#3 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-18 22:04:11 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/thergenreter1/Desktop/final project/repo/streetEats/app/View/Users/index.ctp, line 6]
+2013-08-18 22:04:11 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/thergenr...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/thergenr...', 6, Array)
+#2 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/thergenr...', 6, Array)
+#3 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-18 22:05:05 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS), expecting ')' in [/Users/thergenreter1/Desktop/final project/repo/streetEats/app/View/Users/index.ctp, line 6]
+2013-08-18 22:05:05 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS), expecting ')'
+Request URL: /
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/thergenr...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/thergenr...', 6, Array)
+#2 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/thergenr...', 6, Array)
+#3 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
