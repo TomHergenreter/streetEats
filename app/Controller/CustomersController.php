@@ -6,6 +6,7 @@ class CustomersController extends AppController {
 	
 	var $uses = array('Vendor', 'Location', 'Menu', 'Review', 'Customer', 'Deal', 'Favorite');
 	var $layout = 'customers';
+	var $active = null;
 	
 	//Set Variables for Layout
 	function beforeFilter() {
@@ -134,6 +135,7 @@ class CustomersController extends AppController {
 			$favorites[] = $this->Vendor->find('first', array('conditions' => array('Vendor.vendorId' => $vendor)));
 		}
 		$this->set('favorites', $favorites);
+		$active = 'favorites';
 	}
 	
 	//Add Favorites

@@ -50,10 +50,10 @@
 				} 
 				?>
 				<ul>
-					<li class='active'><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-map-marker icon-2x')), 'find', array('escape' => false)); ?></li>
-					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-heart icon-2x')), 'favorites', array('escape' => false)); ?></li>
-					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-comment icon-2x')), 'reviews', array('escape' => false)); ?></li>
-					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-cog icon-2x')), 'edit', array('escape' => false)); ?></li>
+					<li <?php if($this->params['action'] == 'find'){echo "class='active'";}?>><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-map-marker icon-2x')), 'find', array('escape' => false)); ?></li>
+					<li <?php if($this->params['action'] == 'favorites'){echo "class='active'";}?>><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-heart icon-2x')), 'favorites', array('escape' => false)); ?></li>
+					<li <?php if($this->params['action'] == 'reviews'){echo "class='active'";}?>><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-comment icon-2x')), 'reviews', array('escape' => false)); ?></li>
+					<li <?php if($this->params['action'] == 'edit'){echo "class='active'";}?>><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-cog icon-2x')), 'edit', array('escape' => false)); ?></li>
 					<li><?php echo $this->Html->link('Logout', '/users/logout'); ?></li>
 				</ul>
 			</nav>
