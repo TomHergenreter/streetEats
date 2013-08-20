@@ -31,6 +31,8 @@
 		echo $this->Html->css('normalize');
 		echo $this->Html->css('font-awesome/css/font-awesome.min.css');
 		echo $this->Html->css('screen');
+		
+		echo $this->Html->script('twitter');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');

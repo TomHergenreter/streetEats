@@ -9,7 +9,8 @@
 			echo '<h3>' . $review['Review']['businessName'] . '</h3>';
 			echo '<p>Rating: ' . $review['Review']['rating'] . '</p>';
 			echo '<p><i class="icon-quote-left icon-muted"></i>' . $review['Review']['review'] . '<i class="icon-quote-right icon-muted"></i></p>';
-			echo $this->Form->postLink('delete', array('action' => 'deleteReview', $review['Review']['reviewId']));
+			echo $this->Form->postLink($this->Html->tag('i', '', array('class' => 'icon-trash')), array('action' => 'deleteReview', $review['Review']['reviewId']), array('escape' => false));
+			echo '<p><a href="https://twitter.com/share" class="twitter-share-button" data-size="medium" data-count="none" data-text="'. $review['Review']['review'] .'" data-hashtags="StreetEats,' . str_replace(' ', '', $review['Review']['businessName']) . '" data-lang="en">Tweet</a></p>';
 			echo '</div>';
 		}
 	}	

@@ -12,7 +12,7 @@ class CustomersController extends AppController {
 	function beforeFilter() {
 		if($img = $this->Customer->find('first', array('fields' => 'email', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))))){
 			$hash = md5(strtolower(trim($img['Customer']['email'])));
-			$this->set('avatar', 'http://www.gravatar.com/avatar/HASH' . $hash . '?s=100');
+			$this->set('avatar', 'http://www.gravatar.com/avatar/' . $hash . '?s=100');
 			
 			$name = $this->Auth->user('username');
 			$this->set('name', $name);

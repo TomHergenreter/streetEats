@@ -8,7 +8,7 @@ class VendorsController extends AppController {
 	function beforeFilter() {
 		if($img = $this->Vendor->find('first', array('fields' => 'email', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))))){
 			$hash = md5(strtolower(trim($img['Vendor']['email'])));
-			$this->set('avatar', 'http://www.gravatar.com/avatar/HASH' . $hash . '?s=100');
+			$this->set('avatar', 'http://www.gravatar.com/avatar/' . $hash . '?s=100');
 			
 			$name = $this->Vendor->find('first', array('fields' => 'businessName', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))));
 			$this->set('name', $name['Vendor']['businessName']);
@@ -65,12 +65,15 @@ class VendorsController extends AppController {
     public function location(){
 	    
 	    $userId = $this->Auth->user('userId');
-	    $vendorId = $this->Vendor->find('first', array('fields' => 'vendorId', 'conditions' => array('Vendor.userId' => $userId)));
+	    $vendorId = $this->Vendor->find('first', array('fields' => 'vendorId, businessName', 'conditions' => array('Vendor.userId' => $userId)));
 		$this->set('data', $vendorId);
 		
-		$locations = $this->Location->find('all', array('fields' => 'streetAddress, zip, date, to', 'conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'])));
-		$this->set('locations', $locations);
+		$currentLocation = $this->Location->find('first', array('conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'], 'Location.locationType' => 1)));
+		$this->set('currentLocation', $currentLocation);
+		$recentLocations = $this->Location->find('all', array('fields' => array('DISTINCT Location.streetAddress', 'Location.zip'), 'conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'])));
+		$this->set('locations', $recentLocations);
 		
+		$locations = $this->Location->find('all', array('conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'])));
 		if ($this->request->is('post')) {
 			
 			//Prevent Duplicates
