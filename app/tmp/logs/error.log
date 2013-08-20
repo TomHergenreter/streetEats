@@ -641,3 +641,22 @@ Stack Trace:
 #9 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(VendorsController), Object(CakeRequest), Object(CakeResponse))
 #10 /Users/thergenreter1/Desktop/final project/repo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2013-08-20 02:36:51 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img//truck0.png?url=img%2Ftruck0.png
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/repo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-08-19 21:22:20 Error: Fatal Error (4): syntax error, unexpected '}' in [/Users/thergenreter1/Desktop/final project/repo/streetEats/app/View/Customers/find.ctp, line 52]
+2013-08-19 21:22:20 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /customers/find?url=customers%2Ffind
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/thergenr...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/thergenr...', 52, Array)
+#2 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/thergenr...', 52, Array)
+#3 /Users/thergenreter1/Desktop/final project/repo/streetEats/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

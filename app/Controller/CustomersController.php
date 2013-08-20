@@ -10,6 +10,7 @@ class CustomersController extends AppController {
 	
 	//Set Variables for Layout
 	function beforeFilter() {
+		date_default_timezone_set("America/Denver");
 		if($img = $this->Customer->find('first', array('fields' => 'email', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))))){
 			$hash = md5(strtolower(trim($img['Customer']['email'])));
 			$this->set('avatar', 'http://www.gravatar.com/avatar/' . $hash . '?s=100');

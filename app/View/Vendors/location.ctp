@@ -1,10 +1,14 @@
 
 <!--Current Location-->
 <div class="mainContentSection">
-	<?php date_default_timezone_set("America/Denver");?>
 	<h2>Current Location</h2>
-	<?php echo '<h3>' . $currentLocation['Location']['streetAddress'] . ', ' . $currentLocation['Location']['zip'] . '</h3>';
-		  echo '<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="none" data-text="'. $data['Vendor']['businessName'] .' will be at ' . $currentLocation['Location']['streetAddress']. ', ' . $currentLocation['Location']['zip'] . ' from now until ' . date('g:i a', strtotime($currentLocation['Location']['to'])) .'" data-hashtags="StreetEats,' . str_replace(' ', '', $data['Vendor']['businessName']) . '" data-lang="en">Tweet</a>';
+	<?php 
+	if (count($locations) >= 1){
+		echo '<h3>' . $currentLocation['Location']['streetAddress'] . ', ' . $currentLocation['Location']['zip'] . '</h3>';
+		echo '<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="none" data-text="'. $data['Vendor']['businessName'] .' will be at ' . $currentLocation['Location']['streetAddress']. ', ' . $currentLocation['Location']['zip'] . ' from now until ' . date('g:i a', strtotime($currentLocation['Location']['to'])) .'" data-hashtags="StreetEats,' . str_replace(' ', '', $data['Vendor']['businessName']) . '" data-lang="en">Tweet</a>';
+	}else{
+		echo '<h3>No Current Location, enter one now <i class="icon-arrow-down"></i></h3>';	  
+	}
 	?>
 </div>
 

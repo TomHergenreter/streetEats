@@ -6,6 +6,7 @@ class VendorsController extends AppController {
 	
 	//Set Variables for Layout
 	function beforeFilter() {
+		date_default_timezone_set("America/Denver");
 		if($img = $this->Vendor->find('first', array('fields' => 'email', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))))){
 			$hash = md5(strtolower(trim($img['Vendor']['email'])));
 			$this->set('avatar', 'http://www.gravatar.com/avatar/' . $hash . '?s=100');

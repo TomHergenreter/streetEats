@@ -1,6 +1,6 @@
 <?php $this->Html->script('http://maps.google.com/maps/api/js?key=AIzaSyA9Ey6xqdSNYFmWoZyuWbLnruau5VAFN3k&sensor=true', false); ?>
 <div class='mapSection'>
-	<?php 
+	<?php
 	$mapOptions = array('zoom' => 14, 'type' => 'ROADMAP', 'width' => '1200px', 'height' => '400px', 'style' => 'max-width: 100%;', 'markerIcon' => 'marker.png' , 'custom' => 'mapTypeControl:false, panControl:false, styles : [
 	    {
 	      elementType: "geometry.stroke",
@@ -35,6 +35,7 @@
 	  ]');
 	echo '<h2>Nearby Trucks</h3>';    
 	echo $this->GoogleMap->map($mapOptions);
+	$i = 1;
 	foreach($matches as $match){
 		$id = $match['Location']['vendorId'];
 		$name = $match['Location']['businessName'];
@@ -42,10 +43,14 @@
 		    'showWindow' => true,
 		    'windowText' => $this->html->link($name, 'menus/' . $id),
 		    'markerTitle' => $name,
-		    'markerIcon' => 'truck.png',
+		    'markerIcon' => 'markers/marker' . $i . '.png',
 		);
-	echo $this->GoogleMap->addMarker('map_canvas', '1', $match['Location']['streetAddress'] . '' . $match['Location']['zip'], $marker_options);
-	echo '<h3><i class="icon-map-marker"></i>' . $this->Html->link($name, 'menus/' . $id) . '</h3>';
+		echo $this->GoogleMap->addMarker('map_canvas', '1', $match['Location']['streetAddress'] . '' . $match['Location']['zip'], $marker_options);
+		echo '<div class="locationSection">';
+		echo $this->Html->image('markers/marker' . $i . '.png', array('alt' => 'marker' . $i, 'class' => "marker")); 
+		echo '<h3>' . $this->Html->link($name, 'menus/' . $id) . '</h3>';
+		echo '</div>';
+		$i++;
 	};
 	?>
 </div>
