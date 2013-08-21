@@ -18,7 +18,7 @@
 	<?php
 	if (count($locations) >= 1){
 		foreach($locations as $location ){ 
-		    		echo '<h3>' . $location['Location']['streetAddress'] . '</h3>';
+		    		echo '<h3>' . $location['Location']['streetAddress'] . '<i class="icon-plus-sign pull-right quickLocation"></i></h3>';
 		    		echo '<p class="clearBottom">' . $location['Location']['zip'] . '</p>';
 		}
 	}else{

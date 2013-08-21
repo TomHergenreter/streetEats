@@ -31,13 +31,14 @@
 		echo $this->Html->css('normalize');
 		echo $this->Html->css('font-awesome/css/font-awesome.min.css');
 		echo $this->Html->css('screen');
-		
+	
 		echo $this->Html->script('twitter');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -70,5 +71,6 @@
 		<footer>
 		</footer>
 	</div>
+<?php echo $this->Html->script('quickLocation'); ?>	
 </body>
 </html>

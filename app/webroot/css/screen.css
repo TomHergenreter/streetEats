@@ -573,6 +573,9 @@ body {
 .secondaryContentSection > h2 {
   margin-bottom: .5em;
 }
+.secondaryContentSection > h3 {
+  width: 50%;
+}
 
 .formContainer {
   width: 58%;
@@ -733,4 +736,8 @@ body {
 
 .twitter-share-button {
   margin-top: 1em;
+}
+
+.quickLocation {
+  cursor: pointer;
 }
