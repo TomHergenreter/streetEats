@@ -574,7 +574,7 @@ body {
   margin-bottom: .5em;
 }
 .secondaryContentSection > h3 {
-  width: 50%;
+  width: 55%;
 }
 
 .formContainer {
@@ -587,6 +587,18 @@ body {
   .formContainer {
     float: none;
     border-left: none;
+    width: 100%;
+    padding: 1em;
+    margin: 0 auto;
+  }
+}
+
+.login {
+  margin: 10em auto;
+  width: 32.5%;
+}
+@media (max-width: 800px) {
+  .login {
     width: 100%;
     padding: 1em;
     margin: 0 auto;

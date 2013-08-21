@@ -64,7 +64,7 @@ body {
 		margin-bottom: .5em;
 	}
 	> h3 {
-		width: 50%;
+		width: 55%;
 	}
 }
 
@@ -76,6 +76,16 @@ body {
 	@include breakpoint(m) {
 		float: none; 
 		border-left: none;
+		width: 100%;
+		padding: 1em;
+		margin: 0 auto;
+	}
+}
+
+.login {
+	margin: 10em auto;
+	width: 32.5%;
+	@include breakpoint(m) {
 		width: 100%;
 		padding: 1em;
 		margin: 0 auto;

@@ -16,13 +16,17 @@
 <div class="mainContentSection">
 	<h2>Current Deals</h2>
 	<?php
-	foreach($currentDeals as $deal ): 
-				echo '<div class="subSection">';
-	    		echo '<h3>' . $deal['Deal']['dealTitle'] . '</h3>';
-	    		echo '<p>Description: ' . $deal['Deal']['dealDescription'] . '</p>';
-	    		echo '<p class="clear">Expiration: ' . $deal['Deal']['dealExpiration'] . '</p>';
-	    		echo '<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="none" data-text="'. $deal['Deal']['dealDescription'] .' at ' . $name . '" data-hashtags="StreetEats,' . str_replace(' ', '', $name) . '" data-lang="en">Tweet</a>';
-	    		echo '</div>';
-	endforeach;
+	if (count($currentDeals) >=1 ){
+		foreach($currentDeals as $deal ): 
+					echo '<div class="subSection">';
+		    		echo '<h3>' . $deal['Deal']['dealTitle'] . '</h3>';
+		    		echo '<p>Description: ' . $deal['Deal']['dealDescription'] . '</p>';
+		    		echo '<p class="clear">Expiration: ' . $deal['Deal']['dealExpiration'] . '</p>';
+		    		echo '<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="none" data-text="'. $deal['Deal']['dealDescription'] .' at ' . $name . '" data-hashtags="StreetEats,' . str_replace(' ', '', $name) . '" data-lang="en">Tweet</a>';
+		    		echo '</div>';
+		endforeach;
+	}else{
+		echo '<h3>You Have Not Created Any Deals Yet, Try It Out <i class="icon-arrow-up"></i></h3>';
+	}
 	?>    	
 </div>

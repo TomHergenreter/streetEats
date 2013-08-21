@@ -136,10 +136,10 @@ class VendorsController extends AppController {
         $this->Menu->id = $id;  
         if ($this->Menu->delete()) {
             $this->Session->setFlash(__('Menu Item Deleted'));
-            $this->render('success');
+            $this->redirect(array('action' => 'menu'));
         }else{
         	$this->Session->setFlash(__('Menu Item Was Not Deleted, Please Try Again Later'));
-			$this->redirect(array('action' => 'index'));
+			$this->redirect(array('action' => 'menu'));
 		}	
 	    
     }

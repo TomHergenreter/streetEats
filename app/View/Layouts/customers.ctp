@@ -33,6 +33,7 @@
 		echo $this->Html->css('screen');
 		
 		echo $this->Html->script('maps');
+		echo $this->Html->script('search');
 		echo $this->Html->script('twitter');
 
 		echo $this->fetch('meta');

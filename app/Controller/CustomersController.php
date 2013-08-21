@@ -126,7 +126,7 @@ class CustomersController extends AppController {
 			$this->set('results', ' ');
 		}
 	}
-	
+		
 	//Display Menus
 	public function menus($id = null){
 		$menuItems = $this->Menu->find('all', array('conditions' => array('Menu.vendorId' => $id)));
