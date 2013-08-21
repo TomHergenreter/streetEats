@@ -54,7 +54,6 @@
 	};
 	?>
 </div>
-
 <div class='formContainer'>
 <?php echo $this->Form->create('Vendor'); ?>
     <fieldset>

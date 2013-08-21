@@ -10,6 +10,7 @@ class CustomersController extends AppController {
 	
 	//Set Variables for Layout
 	function beforeFilter() {
+
 		date_default_timezone_set("America/Denver");
 		if($img = $this->Customer->find('first', array('fields' => 'email', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))))){
 			$hash = md5(strtolower(trim($img['Customer']['email'])));
@@ -61,16 +62,25 @@ class CustomersController extends AppController {
                 $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
             }
         } else {
-            $this->request->data = $this->Customer->read(null, $id);
+            $this->response->data = $this->Customer->read(null, $id);
         }
     }
 	
+	public function updateLocation($zip = null){
+	
+		$customerValue = $this->Customer->find('first', array('fields' => array('customerId'),'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
+		$this->Customer->id = $customerValue['Customer']['customerId'];
+		$this->Customer->saveField('zip', $zip);
+	}
+	
 	//Find Trucks
 	public function find() {
+	
 		
+		$customer = $this->Customer->find('first', array('fields' => 'zip', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));				
 		//Map 
 		$this->helpers[] = 'GoogleMap';
-		$trucks = $this->Location->find('all', array('conditions' => array('Location.date' => date('Y-m-d'), 'Location.from' < date('H:i:s'), 'Location.to' > date('H:i:s'), 'Location.locationType' => 1)));
+		$trucks = $this->Location->find('all', array('conditions' => array('Location.date' => date('Y-m-d'), 'Location.from' < date('H:i:s'), 'Location.to' > date('H:i:s'), 'Location.zip' => $customer['Customer']['zip'], 'Location.locationType' => 1)));
 		
 		$data = array();
 		foreach ($trucks as $truck){
