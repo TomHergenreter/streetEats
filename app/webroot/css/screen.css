@@ -535,6 +535,10 @@ input, textarea {
   border-radius: 5px;
 }
 
+#map_canvas {
+  border-bottom: 9px solid #e84c3b;
+}
+
 /*    ___       ___           ___           ___           ___           ___     
      /\__\     /\  \         |\__\         /\  \         /\__\         /\  \    
     /:/  /    /::\  \        |:|  |       /::\  \       /:/  /         \:\  \   
@@ -654,6 +658,12 @@ body {
   border-left: 2px solid #bcbec0;
   margin: 1em 0;
   padding: .5em;
+  overflow: hidden;
+}
+@media (max-width: 720px) {
+  .subSection {
+    border: none;
+  }
 }
 
 .mapSection {
@@ -667,7 +677,7 @@ body {
   .mapSection {
     float: none;
     border-left: none;
-    border-top: 2px solid #e84c3b;
+    border-top: 9px solid #e84c3b;
     width: 100%;
     padding: 0;
     margin: 0 auto;
@@ -828,6 +838,11 @@ footer {
 
 .twitter-share-button {
   margin-top: 1em;
+}
+
+.error-message {
+  position: absolute;
+  right: 10px;
 }
 
 .quickLocation {

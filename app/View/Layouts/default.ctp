@@ -44,6 +44,10 @@
 	        <nav class="landingNav">
 	        	<!-- Logo -->
 	        	<h1 class="logoTitle">Street Eats</h1>
+	        	<ul class="navList">
+	        		<li><a href="#features">Features</a></li>
+	        		<li><a href="#contact">Contact</a></li>
+	        	</ul>
 	        </nav>
         </header>
         <!-- End Header -->

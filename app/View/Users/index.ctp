@@ -9,8 +9,8 @@
 		<h1> Street Eats Is the Easiest Way to Locate Your Favorite Food Trucks!</h1>
 	</div>
 </div>
-<div class="features">
-	<h1 class="navigateTo" id='features'>Meet Street Eats</h1>
+<div class="features" id='features'>
+	<h1 class="navigateTo">Meet Street Eats</h1>
 	<h2>Never waste time searching for your favorite food trucks again.</h2>
 		<ul class="icons-ul">
 		<li><i class="icon-li icon-map-marker icon-3x"></i>Quickly and easily find nearby vendors with integrated Google Maps, or search through our database by name or cuisine type to find just what you are looking for</li>

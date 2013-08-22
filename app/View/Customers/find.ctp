@@ -48,7 +48,9 @@
 		echo $this->GoogleMap->addMarker('map_canvas', '1', $match['Location']['streetAddress'] . '' . $match['Location']['zip'], $marker_options);
 		echo '<div class="locationSection">';
 		echo $this->Html->image('markers/marker' . $i . '.png', array('alt' => 'marker' . $i, 'class' => "marker")); 
+		echo '<div class="subSection">';
 		echo '<h3>' . $this->Html->link($name, 'menus/' . $id) . '</h3>';
+		echo '</div>';
 		echo '</div>';
 		$i++;
 	};

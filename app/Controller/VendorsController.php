@@ -69,7 +69,7 @@ class VendorsController extends AppController {
 	    $vendorId = $this->Vendor->find('first', array('fields' => 'vendorId, businessName', 'conditions' => array('Vendor.userId' => $userId)));
 		$this->set('data', $vendorId);
 		
-		$currentLocation = $this->Location->find('first', array('conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'], 'Location.locationType' => 1)));
+		$currentLocation = $this->Location->find('first', array('conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'], 'Location.locationType' => 1, 'Location.date' => date('Y-m-d'), 'Location.from' < date('H:i:s'), 'Location.to' > date('H:i:s'))));
 		$this->set('currentLocation', $currentLocation);
 		$recentLocations = $this->Location->find('all', array('fields' => array('DISTINCT Location.streetAddress', 'Location.zip'), 'conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'])));
 		$this->set('locations', $recentLocations);
