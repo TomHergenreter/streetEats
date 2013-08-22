@@ -222,7 +222,7 @@ header {
 @media (max-width: 720px) {
   .userPortal {
     width: 100%;
-    margin: 0;
+    margin: 2.75em 0 0 0;
     border-radius: 0 0 0 0;
   }
 }
@@ -263,6 +263,40 @@ header {
   font-weight: 300;
   color: #42b2e3;
   margin-bottom: 1em;
+}
+@media (max-width: 720px) {
+  .dashNav {
+    float: none;
+    position: inherit;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #ffffff;
+  }
+  .dashNav ul {
+    overflow: hidden;
+    margin: 0 auto;
+    display: inherit;
+    padding-top: 1em;
+  }
+  .dashNav ul > li {
+    width: 20%;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+  }
+  .dashNav .avatar {
+    display: none;
+  }
+  .dashNav h3 {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .dashNav ul.vendor > li {
+    width: 16.66666667%;
+  }
 }
 
 @keyframes color {
@@ -464,7 +498,6 @@ form {
 @media (max-width: 800px) {
   form {
     border-left: none;
-    border-top: 2px solid #e84c3b;
     padding-top: 1em;
     padding-left: 0;
     margin: 0 auto;
@@ -518,13 +551,18 @@ body {
 }
 @media (max-width: 720px) {
   body {
-    margin-top: 120px;
+    margin-top: 55px;
   }
 }
 
 .content {
   width: 85%;
   float: right;
+}
+@media (max-width: 720px) {
+  .content {
+    width: 100%;
+  }
 }
 
 .mainContentSection {
@@ -540,7 +578,7 @@ body {
     float: none;
     border-left: none;
     border-top: 2px solid #e84c3b;
-    width: 96%;
+    width: 100%;
     padding: 1em;
     margin: 0 auto;
   }
@@ -565,7 +603,7 @@ body {
     float: none;
     border-left: none;
     border-top: 2px solid #e84c3b;
-    width: 96%;
+    width: 100%;
     padding-top: 1em;
     margin: 0 auto;
   }
@@ -587,21 +625,24 @@ body {
   .formContainer {
     float: none;
     border-left: none;
+    border-top: 2px solid #e84c3b;
     width: 100%;
-    padding: 1em;
     margin: 0 auto;
+    padding: 1em;
   }
 }
 
 .login {
   margin: 10em auto;
   width: 32.5%;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 2em 2em 2em 1em;
 }
 @media (max-width: 800px) {
   .login {
     width: 100%;
     padding: 1em;
-    margin: 0 auto;
+    margin: 5em auto;
   }
 }
 
@@ -628,8 +669,11 @@ body {
     border-left: none;
     border-top: 2px solid #e84c3b;
     width: 100%;
-    padding: 1em;
+    padding: 0;
     margin: 0 auto;
+  }
+  .mapSection > h2 {
+    display: none;
   }
 }
 .mapSection > h2 {
@@ -652,6 +696,10 @@ body {
 .locationSection h3 {
   float: left;
   margin-top: .75em;
+}
+
+footer {
+  width: 100%;
 }
 
 .background {
@@ -680,7 +728,7 @@ body {
     float: none;
     width: 80%;
     margin: 0 auto;
-    padding: 1.5em 0 1.5em 0;
+    padding: 3em 0 1.5em 0;
   }
 }
 @media (max-width: 720px) {
@@ -694,6 +742,7 @@ body {
 
 .features {
   background: #e84c3b;
+  padding-bottom: 2em;
 }
 .features h1 {
   color: #fff;
@@ -701,12 +750,10 @@ body {
   text-align: center;
   padding: .25em;
 }
-.features h3 {
-  color: #fff;
-  font-size: 1em;
+.features h2 {
   margin: 0 auto;
   text-align: center;
-  padding: .5em;
+  padding: 0 .5em .5em .5em;
 }
 .features .icons-ul {
   width: 70%;
@@ -740,6 +787,39 @@ body {
   .introImg {
     display: none;
   }
+}
+
+.contact {
+  background: #fff;
+  padding: 2em;
+}
+.contact h1 {
+  color: #e84c3b;
+  margin: 0 auto;
+  text-align: center;
+  padding: .25em;
+}
+.contact h2 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 .5em .5em .5em;
+}
+.contact p {
+  width: 60%;
+  margin: 1em auto;
+  text-align: center;
+}
+.contact p i {
+  padding: 1em;
+}
+@media (max-width: 720px) {
+  .contact p i {
+    padding: .3em;
+  }
+}
+
+footer {
+  color: #e84c3b;
 }
 
 .formContainer .twitter-share-button {

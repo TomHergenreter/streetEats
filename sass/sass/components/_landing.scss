@@ -1,3 +1,4 @@
+
 .background {
 	background: url(../img/streetEatsbg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -21,7 +22,7 @@
 			float: none;
 			width: 80%;
 			margin: 0 auto;
-			padding: 1.5em 0 1.5em 0;
+			padding: 3em 0 1.5em 0;
 		}
 	}
 	@include breakpoint(s) {
@@ -33,19 +34,19 @@
 }
 
 .features {
+	
 	background: $orange;
+	padding-bottom: 2em;
 	h1{
 		color: #fff;
 		margin: 0 auto;
 		text-align: center;
 		padding: .25em;
 	}
-	h3{
-		color: #fff;
-		font-size: 1em;
+	h2{
 		margin: 0 auto;
 		text-align: center;
-		padding: .5em;
+		padding: 0 .5em .5em .5em;
 	}
 	.icons-ul {
 		width: 70%;
@@ -76,4 +77,35 @@
 	@include breakpoint(s) {
 		display: none;
 	}
+}
+
+.contact {
+	background: #fff;
+	padding: 2em; 
+	h1{
+		color: $orange;
+		margin: 0 auto;
+		text-align: center;
+		padding: .25em;
+	}
+	h2{
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 .5em .5em .5em;
+	}
+	p{
+		width: 60%;
+		margin: 1em auto;
+		text-align: center;
+		i {
+			padding: 1em;
+			@include breakpoint(s) {
+				padding: .3em;
+			}
+		}	
+	}
+}
+
+footer {
+	color: $orange;
 }

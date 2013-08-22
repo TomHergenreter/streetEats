@@ -92,7 +92,7 @@
 	}
 	@include breakpoint(s){
 		width: 100%;
-		margin: 0;
+		margin: 2.75em 0 0 0;
 		border-radius: 0 0 0 0;
 	}
 }
@@ -136,6 +136,41 @@
 		font-weight: $light;
 		color: $blue;
 		margin-bottom: 1em;
+	}
+	@include breakpoint (s){
+		float: none;
+		position: inherit;
+		width: 100%;
+		overflow: hidden;
+		margin: 0 auto;
+		background: #ffffff;
+		ul {
+			overflow: hidden;
+			margin: 0 auto;
+			display: inherit;
+			padding-top: 1em;
+		}
+		ul > li {
+			width: 20%;
+			overflow: hidden;
+			float: left;
+			text-align: center;
+		}
+		
+		.avatar {
+			display: none;
+		}
+		h3 {
+			display: none;
+		}
+	}
+}
+
+.dashNav {
+	@include breakpoint (s){
+		ul.vendor > li {
+			width: 16.66666667%;
+		}
 	}
 }
 

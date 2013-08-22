@@ -37,23 +37,13 @@
 	?>
 </head>
 <body>
-	<div id="container">
+	<div id="container landing">
 	
 		<!-- Header -->
         <header>
 	        <nav class="landingNav">
-	        
 	        	<!-- Logo -->
 	        	<h1 class="logoTitle">Street Eats</h1>
-	        	
-	        	<!-- nav links -->
-	        	<ul class="navList">
-	        		<li><a href="#about">About</a></li>
-	        		<li><a href="">Features</a></li>
-	        		<li><a href="">Contact</a></li>
-	        		<li><a href="">Blog</a></li>
-	        	</ul>
-	        	
 	        </nav>
         </header>
         <!-- End Header -->
@@ -68,8 +58,9 @@
         </div>
         <!-- End Map Section -->
         
-		<div id="footer">
-		</div>
+		<footer>
+			<p>&copyStreet Eats, 2013</p>
+		</footer>
 	</div>
 </body>
 </html>

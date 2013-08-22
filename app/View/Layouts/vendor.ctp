@@ -52,13 +52,13 @@
 					echo '<h3>' . $name . '</h3>';
 				} 
 				?>
-				<ul>
+				<ul class="vendor">
 					<li <?php if($this->params['action'] == 'location'){echo "class='active'";}?>><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-map-marker icon-2x')), 'location', array('escape' => false)); ?></li>
 					<li <?php if($this->params['action'] == 'menu'){echo "class='active'";}?>><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-reorder icon-2x')), 'menu', array('escape' => false)); ?></li>
 					<li <?php if($this->params['action'] == 'edit'){echo "class='active'";}?>><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-cog icon-2x')), 'edit', array('escape' => false)); ?></li>
 					<li <?php if($this->params['action'] == 'review'){echo "class='active'";}?>><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-comment icon-2x')), 'review', array('escape' => false)); ?></li>
 					<li <?php if($this->params['action'] == 'deals'){echo "class='active'";}?>><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-dollar icon-2x')), 'deals', array('escape' => false)); ?></li>
-					<li><?php echo $this->Html->link('Logout', '/users/logout'); ?></li>
+					<li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-signout icon-2x')), '/users/logout', array('escape' => false)); ?></li>
 				</ul>
 			</nav>
 		

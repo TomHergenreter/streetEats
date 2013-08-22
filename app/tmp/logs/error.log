@@ -1019,3 +1019,865 @@ Stack Trace:
 #3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
 #4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2013-08-21 15:04:28 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:11:20 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:12:39 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:13:02 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:15:05 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:15:32 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:15:59 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:16:14 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:16:35 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:17:39 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:20:26 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:22:14 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:23:02 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:23:25 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:23:45 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:23:56 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:24:37 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:27:16 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:27:25 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:28:19 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:28:45 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:28:58 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:29:33 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:30:20 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:30:35 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:30:47 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:31:03 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:31:29 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:33:02 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:33:22 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:34:44 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:35:42 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:36:08 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:36:35 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:38:07 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:38:27 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:39:07 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:39:21 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:39:56 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:42:20 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:42:55 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:43:20 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:43:54 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:44:07 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:44:21 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:44:42 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:46:12 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:47:03 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:47:20 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:47:33 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:48:14 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:48:52 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:52:04 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:53:21 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:55:31 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:57:25 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:57:33 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:58:27 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:59:13 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 15:59:50 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 16:00:34 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 16:01:31 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 16:01:43 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 16:01:57 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 16:02:25 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 16:02:39 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 16:02:50 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 16:05:05 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 23:24:31 Error: Fatal Error (4): syntax error, unexpected '<' in [/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Users/index.ctp, line 26]
+2013-08-21 23:24:31 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/thergenr...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/thergenr...', 26, Array)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/thergenr...', 26, Array)
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-21 18:44:27 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 18:45:03 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-21 18:51:51 Error: [MissingViewException] View file "/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/View/Customers/update_location.ctp',
+)
+Request URL: /customers/updateLocation/80634?url=customers%2FupdateLocation%2F80634
+Stack Trace:
+#0 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/thergenreter1/Desktop/final project/finalRepo/streetEats/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
