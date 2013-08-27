@@ -130,9 +130,14 @@ class CustomersController extends AppController {
 	//Display Menus
 	public function menus($id = null){
 		$menuItems = $this->Menu->find('all', array('conditions' => array('Menu.vendorId' => $id)));
-		$vendor = $this->Vendor->find('first', array('fields' => 'businessName', 'conditions' => array('Vendor.vendorId' => $id)));
+		$vendor = $this->Vendor->find('first', array('fields' => 'businessName, vendorId', 'conditions' => array('Vendor.vendorId' => $id)));
+		$reviews = $this->Review->find('all', array('conditions' => array('Review.vendorId' => $id)));
+		
+		
 		$this->set('menuItems', $menuItems);
 		$this->set('vendor', $vendor['Vendor']['businessName']);
+		$this->set('vendorId', $vendor['Vendor']['vendorId']);
+		$this->set('reviews', $reviews);
 	}
 	
 	//Read Favorites
@@ -154,6 +159,7 @@ class CustomersController extends AppController {
 		$customerId = $this->Customer->find('first', array('fields' => 'customerId', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
 		$data = array('Favorite' => array('customerId' => $customerId['Customer']['customerId'], 'vendorId' => $vendorId));
 		if($this->Favorite->save($data)){
+			$this->Session->setFlash(__('Your Favorites Have Been Updated'));
 			$this->redirect('/customers/favorites/');
 		}else{
 			$this->Session->setFlash(__('Request Could Not Be Completed'));
@@ -175,9 +181,12 @@ class CustomersController extends AppController {
 	
 	//Write Review
 	public function addReview($vendorId = null){
+		$vendorName = $this->Vendor->find('first', array('fields' => 'businessName', 'conditions' => array('Vendor.vendorId' => $vendorId)));
 		$customerId = $this->Customer->find('first', array('fields' => 'customerId', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))));
 		$this->set('customerId', $customerId);
 		$this->set('vendorId', $vendorId);
+		$this->set('vendorName', $vendorName['Vendor']['businessName']);
+		
 		if($this->request->is('post')){
 			$this->Review->create();
 			if($this->Review->save($this->request->data)){

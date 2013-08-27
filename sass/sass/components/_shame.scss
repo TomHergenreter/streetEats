@@ -1,3 +1,22 @@
 .quickLocation {
 	cursor: pointer;
 }
+
+a i, a:visited i, a:hover i, a:active i{
+	color: $lead;
+	margin: 1em .5em 0 0;
+}
+
+h3 a {
+	text-decoration: underline;
+	color: $blue;
+	&:hover {
+		color: $blue;
+	}
+	&:visited {
+		color: $blue;
+	}
+	&:active {
+		color: $blue;
+	}
+}

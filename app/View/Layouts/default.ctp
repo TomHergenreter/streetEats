@@ -31,6 +31,8 @@
 		echo $this->Html->css('font-awesome/css/font-awesome.min.css');
 		echo $this->Html->css('screen');
 
+		echo $this->Html->script('timezone');
+
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');

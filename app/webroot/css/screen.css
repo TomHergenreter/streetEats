@@ -555,7 +555,7 @@ body {
 }
 @media (max-width: 720px) {
   body {
-    margin-top: 55px;
+    margin-top: 75px;
   }
 }
 
@@ -700,7 +700,7 @@ body {
 .marker {
   display: inline;
   float: left;
-  padding: .5em;
+  padding: .25em 1em 0 .5em;
 }
 
 .locationSection h3 {
@@ -847,4 +847,23 @@ footer {
 
 .quickLocation {
   cursor: pointer;
+}
+
+a i, a:visited i, a:hover i, a:active i {
+  color: #444444;
+  margin: 1em .5em 0 0;
+}
+
+h3 a {
+  text-decoration: underline;
+  color: #42b2e3;
+}
+h3 a:hover {
+  color: #42b2e3;
+}
+h3 a:visited {
+  color: #42b2e3;
+}
+h3 a:active {
+  color: #42b2e3;
 }

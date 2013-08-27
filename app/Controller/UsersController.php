@@ -29,6 +29,7 @@ class UsersController extends AppController {
 	public function logout() {
 	    $this->redirect($this->Auth->logout());
 	    $this->Session->setFlash(__('Come Back Soon'));
+	    $this->Session->delete('vendors');
 	}
 
     public function index() {

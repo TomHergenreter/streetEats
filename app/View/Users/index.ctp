@@ -1,6 +1,6 @@
 	<ul class="userPortal">
-		<li><?php echo $this->Html->link('Register', '/users/add'); ?></li>
-		<li><?php echo $this->Html->link('Login', '/users/login'); ?></li>
+		<li><?php echo $this->Html->link('Register', 'add'); ?></li>
+		<li><?php echo $this->Html->link('Login', 'login'); ?></li>
 	</ul>
 
 <div class="intro background">
@@ -26,6 +26,7 @@
 	<?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-twitter icon-3x')), 'https://twitter.com/streeteatsco', array('escape' => false));
 	echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-facebook icon-3x')), 'https://twitter.com/streeteatsco', array('escape' => false));
 	echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-github icon-3x')), 'https://github.com/TomHergenreter/streetEats', array('escape' => false));
+	echo $_COOKIE['offset'];
 	?>
 	</p>
 </div>

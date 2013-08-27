@@ -6,7 +6,8 @@ class VendorsController extends AppController {
 	
 	//Set Variables for Layout
 	function beforeFilter() {
-		date_default_timezone_set("America/Denver");
+		
+		date_default_timezone_set("GMT");
 		if($img = $this->Vendor->find('first', array('fields' => 'email', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))))){
 			$hash = md5(strtolower(trim($img['Vendor']['email'])));
 			$this->set('avatar', 'http://www.gravatar.com/avatar/' . $hash . '?s=100');
@@ -34,7 +35,7 @@ class VendorsController extends AppController {
 			
             $this->Vendor->create();
             if ($this->Vendor->save($this->request->data)) {
-            	$this->render('/vendors/location');
+            	$this->redirect(array('action' => 'location'));;
             } else {
 	            echo ('error');
             }
@@ -45,7 +46,7 @@ class VendorsController extends AppController {
 	public function edit($id = NULL) {
 		$userId = $this->Auth->user('userId');
 	
-        $vendorValue = $this->Vendor->find('first', array('fields' => array('vendorId','businessName', 'email', 'zip', 'imageName', 'userId'),'conditions' => array('Vendor.userId' => $userId)));
+        $vendorValue = $this->Vendor->find('first', array('fields' => array('vendorId','businessName', 'email', 'zip', 'imageName', 'userId', 'foodType'),'conditions' => array('Vendor.userId' => $userId)));
 		
 		$this->set('data', $vendorValue);
 		
@@ -64,7 +65,7 @@ class VendorsController extends AppController {
     
     //Location Settings
     public function location(){
-	    
+	      
 	    $userId = $this->Auth->user('userId');
 	    $vendorId = $this->Vendor->find('first', array('fields' => 'vendorId, businessName', 'conditions' => array('Vendor.userId' => $userId)));
 		$this->set('data', $vendorId);

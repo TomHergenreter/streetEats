@@ -46,11 +46,13 @@
 		    'markerIcon' => 'markers/marker' . $i . '.png',
 		);
 		echo $this->GoogleMap->addMarker('map_canvas', '1', $match['Location']['streetAddress'] . '' . $match['Location']['zip'], $marker_options);
-		echo '<div class="locationSection">';
-		echo $this->Html->image('markers/marker' . $i . '.png', array('alt' => 'marker' . $i, 'class' => "marker")); 
+		//echo '<div class="locationSection">'; 
 		echo '<div class="subSection">';
+		echo $this->Html->image('markers/marker' . $i . '.png', array('alt' => 'marker' . $i, 'class' => "marker"));
 		echo '<h3>' . $this->Html->link($name, 'menus/' . $id) . '</h3>';
-		echo '</div>';
+		echo '<p>' . $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-heart')), '/customers/addFavorites/' . $id, array('escape' => false));
+		echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-comment')), '/customers/addReview/' . $id, array('escape' => false)) . '</p>';
+		//echo '</div>';
 		echo '</div>';
 		$i++;
 	};
