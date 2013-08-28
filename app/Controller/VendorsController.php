@@ -7,7 +7,8 @@ class VendorsController extends AppController {
 	//Set Variables for Layout
 	function beforeFilter() {
 		
-		date_default_timezone_set("GMT");
+		date_default_timezone_set('UTC');
+		
 		if($img = $this->Vendor->find('first', array('fields' => 'email', 'conditions' => array('Vendor.userId' => $this->Auth->user('userId'))))){
 			$hash = md5(strtolower(trim($img['Vendor']['email'])));
 			$this->set('avatar', 'http://www.gravatar.com/avatar/' . $hash . '?s=100');
@@ -70,8 +71,16 @@ class VendorsController extends AppController {
 	    $vendorId = $this->Vendor->find('first', array('fields' => 'vendorId, businessName', 'conditions' => array('Vendor.userId' => $userId)));
 		$this->set('data', $vendorId);
 		
-		$currentLocation = $this->Location->find('first', array('conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'], 'Location.locationType' => 1, 'Location.date' => date('Y-m-d'), 'Location.from' < date('H:i:s'), 'Location.to' > date('H:i:s'))));
-		$this->set('currentLocation', $currentLocation);
+		//Timezone variables
+	    $offset = $_COOKIE['offset'] * 60;
+	    
+		$currentLocation = $this->Location->find('first', array('conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'], 'Location.locationType' => 1, 'Location.date' => date('Y-m-d'))));
+		if(isset($currentLocation['Location'])){
+			if (strtotime($currentLocation['Location']['to']) > strtotime(date('H:i:s'))){
+				$this->set('currentTime', date('g:i a', strtotime($currentLocation['Location']['to']) - $offset));
+				$this->set('currentLocation', $currentLocation);
+			}
+		}
 		$recentLocations = $this->Location->find('all', array('fields' => array('DISTINCT Location.streetAddress', 'Location.zip'), 'conditions' => array('Location.vendorId' => $vendorId['Vendor']['vendorId'])));
 		$this->set('locations', $recentLocations);
 		
@@ -96,6 +105,11 @@ class VendorsController extends AppController {
 	            	}
             	}		
 	            $this->Location->create();
+	            $preOffset = strtotime($this->request->data['Location']['to']);
+	            $currentTimeOffset = strtotime(date('H:i:s'));
+	            $time = $preOffset + $offset;
+	            $this->request->data['Location']['to'] = date('H:i:s', $time);
+	            $this->request->data['Location']['from'] = date('H:i:s', $currentTimeOffset);
 	            if ($this->Location->save($this->request->data)) {
 	            	$this->Session->setFlash(__('Your Location Has Been Updated!'));
 	            	$this->redirect(array('action' => 'location'));

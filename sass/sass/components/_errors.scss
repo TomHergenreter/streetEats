@@ -1,4 +1,17 @@
 .error-message{
-	position: absolute;
-	right: 10px;
+	padding: .5em;
+	margin-top: .1em;
+	font-family: $baseFontFamily;
+	border: 2px solid $orange;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -10px;
+		width: 0; 
+		height: 0; 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid $orange;
+	}
 }

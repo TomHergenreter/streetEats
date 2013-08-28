@@ -11,7 +11,7 @@ class CustomersController extends AppController {
 	//Set Variables for Layout
 	function beforeFilter() {
 
-		date_default_timezone_set("America/Denver");
+		date_default_timezone_set("UTC");
 		if($img = $this->Customer->find('first', array('fields' => 'email', 'conditions' => array('Customer.userId' => $this->Auth->user('userId'))))){
 			$hash = md5(strtolower(trim($img['Customer']['email'])));
 			$this->set('avatar', 'http://www.gravatar.com/avatar/' . $hash . '?s=100');
@@ -84,10 +84,12 @@ class CustomersController extends AppController {
 		
 		$data = array();
 		foreach ($trucks as $truck){
-			$vendorName = $this->Vendor->find('first', array('fields' => 'businessName', 'conditions' => array('Vendor.vendorId' => $truck['Location'])));
-			$truck['Location']['businessName'] = $vendorName['Vendor']['businessName'];
-			$data[] = $truck;
-		};
+			if (strtotime($truck['Location']['to']) > strtotime(date('H:i:s'))){
+				$vendorName = $this->Vendor->find('first', array('fields' => 'businessName', 'conditions' => array('Vendor.vendorId' => $truck['Location'])));
+				$truck['Location']['businessName'] = $vendorName['Vendor']['businessName'];
+				$data[] = $truck;
+			};
+		}
 		$this->set('matches', $data);
 		
 		//Search Function

@@ -35,27 +35,31 @@
 	  ]');
 	echo '<h2>Nearby Trucks</h3>';    
 	echo $this->GoogleMap->map($mapOptions);
-	$i = 1;
-	foreach($matches as $match){
-		$id = $match['Location']['vendorId'];
-		$name = $match['Location']['businessName'];
-		$marker_options = array(
-		    'showWindow' => true,
-		    'windowText' => $this->html->link($name, 'menus/' . $id),
-		    'markerTitle' => $name,
-		    'markerIcon' => 'markers/marker' . $i . '.png',
-		);
-		echo $this->GoogleMap->addMarker('map_canvas', '1', $match['Location']['streetAddress'] . '' . $match['Location']['zip'], $marker_options);
-		//echo '<div class="locationSection">'; 
-		echo '<div class="subSection">';
-		echo $this->Html->image('markers/marker' . $i . '.png', array('alt' => 'marker' . $i, 'class' => "marker"));
-		echo '<h3>' . $this->Html->link($name, 'menus/' . $id) . '</h3>';
-		echo '<p>' . $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-heart')), '/customers/addFavorites/' . $id, array('escape' => false));
-		echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-comment')), '/customers/addReview/' . $id, array('escape' => false)) . '</p>';
-		//echo '</div>';
-		echo '</div>';
-		$i++;
-	};
+	if(count($matches) >= 1){
+		$i = 1;
+		foreach($matches as $match){
+			$id = $match['Location']['vendorId'];
+			$name = $match['Location']['businessName'];
+			$marker_options = array(
+			    'showWindow' => true,
+			    'windowText' => $this->html->link($name, 'menus/' . $id),
+			    'markerTitle' => $name,
+			    'markerIcon' => 'markers/marker' . $i . '.png',
+			);
+			echo $this->GoogleMap->addMarker('map_canvas', '1', $match['Location']['streetAddress'] . '' . $match['Location']['zip'], $marker_options);
+			//echo '<div class="locationSection">'; 
+			echo '<div class="subSection">';
+			echo $this->Html->image('markers/marker' . $i . '.png', array('alt' => 'marker' . $i, 'class' => "marker"));
+			echo '<h3>' . $this->Html->link($name, 'menus/' . $id) . '</h3>';
+			echo '<p>' . $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-heart')), '/customers/addFavorites/' . $id, array('escape' => false));
+			echo $this->Html->link($this->Html->tag('i', '', array('class' => 'icon-comment')), '/customers/addReview/' . $id, array('escape' => false)) . '</p>';
+			//echo '</div>';
+			echo '</div>';
+			$i++;
+		};
+	}else{
+		echo '<h3>No Nearby Matches</h3>';
+	}
 	?>
 </div>
 <div class='formContainer'>
